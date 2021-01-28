@@ -7,7 +7,7 @@ quest.authors,Moisés
 quest.authors_short,Moisés
 quest.synopsys,Algo ocurre en la mansión...¿pero el qué?
 EventInit03.button1,Continuar
-EventInit01A.text,Sois investigadores, de eso estáis seguros...¿o no? Miráis a vuestro alrededor y tardáis unos segundos en ser conscientes de algo: no os acordáis de nada. De nada, excepto de vuestro nombre y profesión.\n\nEstábais siguiendo la pista a algo importante y...¿o estábais de vacaciones?\n\nNo os conocéis.
+EventInit01A.text,Sois investigadores, de eso estáis seguros...¿o no? Miráis a vuestro alrededor y tardáis unos segundos en ser conscientes de algo: no os acordáis de nada. De nada, excepto de vuestro nombre y profesión.\n\nEstábais siguiendo la pista a algo importante y...¿o estábais de vacaciones?\n\nPese a estar todos juntos en la misma sala, estáis seguros de que no os conocéis. Al miraros entre vosotros os percatáis de que todos parecéis igual de confusos y perdidos. ¿Quiénes son los demás?, ¿y dónde estáis?
 EventInit04.button1,Continuar
 EventInit03.text,El dolor de cabeza es insoportable. Despertáis desconcertados en el salón de lo que parece ser una mansión. No recordáis muy bien qué hacéis ahí ni cómo habéis llegado. Cuando conseguís incorporaros sobre vuestros asientos os fijáis que todos tenéis una copa de vino o bien en la mano o derramada encima vuestra o por el suelo; alguien os ha echado algo en la bebida.\n\nTodos los investigadores adquieren el estado Desconcertado.\n\nTodos los investigadores comienzan con 2 pistas {clue}.
 EventSittingRoomDoor2Show.text,Hay una puerta a un lado de salón.
@@ -150,7 +150,7 @@ TokenLibraryDoor02.text,Estraños sonidos de cánticos se oyen tras la puerta, q
 TokenLibraryDoor02.button1,Continuar
 EventLibraryDoor01Opened05.text,Hay una puerta al otro lado de la biblioteca. Se oyen unas voces que provienen del otro lado.
 EventLibraryDoor01Opened05.button1,Continuar
-EventInit04.text,Sitúa los investigadores repartidos por el salón, por los diferentes asientos disponibles.\n\nSolo cuando hayas terminado, prosigue.
+EventInit04.text,Sitúa los investigadores repartidos por el salón, por los diferentes asientos disponibles. Puedes utilizar cualquier asiento de todo el salón.\n\nSolo cuando hayas terminado, prosigue.
 EventInit02C.text,{rnd:hero} encuentra en un bolsillo de su chaqueta un {c:QItemRandomLigh01} {MAD20}.\n\nEn cambio...el investigador sentado a su derecha se siente débil y...muy desconcetrando...pierde 1 pista {clue}.
 EventInit01C01.text,La vida siempre os ha sonreído y la suerte os ha acompañado...hasta ahora.\n\nCada investigador comienza con 2 pistas {clue}.
 UIImageInit01.button1,Continuar
@@ -190,7 +190,7 @@ EventCultistOfficeAppear.button1,Continuar
 EventCultistOfficeAppear.text,Acto seguido se desploma y aparece frente a tí y aparece un {c:SpawnMonster02} {MAD20}.\n\nColoca su ficha en el lugar indicado.
 EventCorridor02ViewMoreShow06.text,Tienes la oportunidad de desplazarte 1 espacio a la zona explorada.
 EventCorridor02ViewMoreShow05.button1,Continuar
-quest.name,La mansión de los sacrificios
+quest.name,La mansión de los sacrificios (v0.7)
 EventInit01A.button1,Continuar
 EventInit01B.text,No conocéis vuestro pasado, pero sí sabéis lo difícil que ha sido siempre vuestro camino...
 EventInit01B.button2,Todo lo que habéis conseguido, lo habéis luchado
@@ -423,3 +423,7 @@ TokenLobbyCultist01.text,Un extraño tipo. Parece no tener miedo a nada...
 TokenLobbyCultist01.button1,Continuar
 TokenLobbyCultist02.text,Otro tipo más...¿cuántos hay?, ¿por qué hacen esto?
 TokenLobbyCultist02.button1,Continuar
+UIIntroductionContinueText.uitext,Continuar
+UIIntroductionText.uitext,El concepto de lo sobrenatural no deja a nadie indiferente. Aunque siempre habrán escépticos, lo cierto es que cada vez hay más y más adeptos a todo tipo de cultos que estudian lo paranomal.\n\nY no hay que olvidarse de un tercer tipo: esas personas que ni creen ni dejan de creer; personas que quieren aprender de esas sectas y sus creencias, comprender sus motivaciones, quizá con la ilusión de llegar a ver lo que ellos no pueden ver. ¿Qué encuentran estos cultos en lo que hacen?, ¿por qué llegan a los extremos que algunos llegan?\n\nMuchos han sido los años de investigación que habéis dedicado cada uno, por separado, al estudio de los diferentes cultos de toda índole, desde los satánicos a los más puro estilo lovecraft. Y eso, compañeros de oficio, es lo que os ha traido hasta aquí.
+EventCenterCameraStartGame.text,Al menos una cosa tenéis clara: tenéis que salir de aquí.
+EventCenterCameraStartGame.button1,Entendido
