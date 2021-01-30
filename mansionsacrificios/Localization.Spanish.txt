@@ -9,22 +9,22 @@ quest.synopsys,Algo ocurre en la mansión...¿pero el qué?
 EventInit03.button1,Continuar
 EventInit01A.text,Sois investigadores, de eso estáis seguros...¿o no? Miráis a vuestro alrededor y tardáis unos segundos en ser conscientes de algo: no os acordáis de nada. De nada, excepto de vuestro nombre y profesión.\n\nEstábais siguiendo la pista a algo importante y...¿o estábais de vacaciones?\n\nPese a estar todos juntos en la misma sala, estáis seguros de que no os conocéis. Al miraros entre vosotros os percatáis de que todos parecéis igual de confusos y perdidos. ¿Quiénes son los demás?, ¿y dónde estáis?
 EventInit04.button1,Continuar
-EventInit03.text,El dolor de cabeza es insoportable. Despertáis desconcertados en el salón de lo que parece ser una mansión. No recordáis muy bien qué hacéis ahí ni cómo habéis llegado. Cuando conseguís incorporaros sobre vuestros asientos os fijáis que todos tenéis una copa de vino o bien en la mano o derramada encima vuestra o por el suelo; alguien os ha echado algo en la bebida.\n\nTodos los investigadores adquieren el estado Desconcertado.\n\nTodos los investigadores comienzan con 2 pistas {clue}.
+EventInit03.text,El dolor de cabeza es insoportable. Despertáis desconcertados en el salón de lo que parece ser una mansión. No recordáis muy bien qué hacéis ahí ni cómo habéis llegado. Cuando conseguís incorporaros sobre vuestros asientos os fijáis que todos tenéis una copa de vino o bien en la mano o derramada encima vuestra o por el suelo; alguien os ha echado algo en la bebida.\n\nTodos los investigadores adquieren el estado Aturdido.
 EventSittingRoomDoor2Show.text,Hay una puerta a un lado de salón.
 EventSittingRoomDoor2Show.button1,Continuar
 EventSittingRoomMecanismShow02.text,En la estantería veis una serie de libros, documentos y objetos algo extraños y muy antiguos. Coloca una ficha de interacción en la estantería.
 EventSittingRoomMecanismShow02.button1,Continuar
-EventSittingRoomDoor2Broken.text,Cuando golpeas la puerta con el hombro, esta cede y consigues desencajar la madera las visagras.\n \n Sitúa la ficha {MAD20} como se indica. Puedes moverte a la habitación que estás explorando, si quieres.\n\nDescarta la ficha de exploración.
+EventSittingRoomDoor2Broken.text,Cuando golpeas la puerta con el hombro, esta cede y consigues desencajar la madera las visagras.\n \n Sitúa la ficha {MAD20} como se indica. Puedes moverte a la habitación que estás explorando, si quieres.\n\nDescarta la ficha de Exploración.
 EventSittingRoomDoor2Broken.button1,Continuar
 TokenSittingRoomDoor2Key.text,Una llave. No tiene ningún grabado, con lo que desconoces su uso.
 TokenSittingRoomDoor2Key.button1,{action} Coger
-EventKeyConseguida.text,Coges la llave. Agrega el objeto {c:QItemKey01} {MAD20} al inventario.\n\nDescarta la ficha de búsqueda.
+EventKeyConseguida.text,Coges la llave. Agrega el objeto {c:QItemKey01} {MAD20} al inventario.\n\nDescarta la ficha de Búsqueda.
 EventKeyConseguida.button1,Continuar
 EventShowCorridor01.text,Un largo pasillo lleno de cuadros...no hay duda, estáis en una mansión.
 EventSittingRoomDoor2Opened.text,La puerta deja paso a un largo pasillo.
 EventShowCorridor01.button1,Continuar
 EventWomanCrying1.button1,Continuar
-EventCorridor01ShowMore.text,Cuando un investigador esté cerca, podrá ver qué hay más allá. ¿Estará la mujer en el pasillo o más allá?
+EventCorridor01ShowMore.text,Cuando un investigador esté cerca, podrá ver qué hay más allá. ¿Estará la mujer en el pasillo o más allá?\n\nColoca una ficha de Vistazo.
 EventWomanCrying1.text,Lo que parece ser el llanto de una mujer procede de más allá de donde alcanza la vista. Habría que comprobar si se encuentra bien. Quizá os ayude a saber dónde estáis y el motivo por el que estáis aquí. Pero,... ¿qué era ese otro ruido que se ha oído?
 EventCorridor02Table.button1,Continuar
 TokenCorridor01ViewMore.text,¿Echas un vistazo?
@@ -44,10 +44,10 @@ EventCrows01.button1,Continuar
 EventMythosRound01.text,La luz que entra por las ventanas...juraríais que a ratos es de día y a ratos de noche. No hay ningún efecto inmediato.
 EventMythosRound01.button1,Continuar
 EventMythosRound03.button1,Continuar
-EventMythosRound02.text,"Algo se ha movido bajo el sofá de la esquina, pero ya no está ahí. Al menos de eso está convendido/a {rnd:hero}. Parecía una...serpiente, pero esos ojos rojos y esas fauces...¿qué está pasando?, ¿nos han echado alucinógenos en la bebida? Por otro lado puede ser el estrés y los nervios por estar aquí encerrados; ya te había pasado antes, en alguna otra ocasión.\n\nRealiza una tirada de ({lore}; 3). Si la superas, te acercas al sofá y miras debajo para asegurarte de que es tu mente la que te está jugando una mala pasada; acto seguido vuelves a donde estabas. Si fallas la tirada, sufres 1 de terror; ves nuevamente esa ""serpiente"" moverse por la habitación, entre las sombras. Es...enorme y va a por tí. Sientes la necesidad de salir de la habitación cuanto antes, ¡quieres sobrevivir!"
+EventMythosRound02.text,"Algo se ha movido y se ha metido bajo el sofá de la esquina, pero ya no está ahí. Al menos de eso está convendido/a {rnd:hero}. Parecía una...serpiente, pero esos ojos rojos y esas fauces...¿qué está pasando?, ¿nos han echado alucinógenos en la bebida? Por otro lado puede ser el estrés y los nervios por estar aquí encerrados; ya te había pasado antes, en alguna otra ocasión.\n\nRealiza una tirada de ({lore}; 3). Si la superas, te acercas al sofá y miras debajo para asegurarte de que es tu mente la que te está jugando una mala pasada; acto seguido vuelves a donde estabas. Si fallas la tirada, sufres 1 de terror; ves nuevamente esa ""serpiente"" moverse por la habitación, entre las sombras. Es...enorme y va a por tí. Sientes la necesidad de salir de la habitación cuanto antes, ¡quieres sobrevivir!"
 EventMythosRound03.text,Una suave melodía suena desde algún lado de la casa, pero parece que solo {rnd:hero} puede oírla. Realiza una tirada de ({will}; 2). Si la superas, te convences de que es solo una imaginación tuya, probablemente ocasionada por los nervios de la situación. Si fallas la tirada, sufres 1 de terror.
 EventMythosRound02.button1,Continuar
-EventOpenWithKey01.text,Abres la puerta utilizando la llave. Decides quedarte con las llaves, seguro que te pueden ser de utilidad más adelante.\n\nDescarta la ficha de exploración.
+EventOpenWithKey01.text,Abres la puerta utilizando la llave. Decides quedarte con las llaves, seguro que te pueden ser de utilidad más adelante.\n\nDescarta la ficha de Exploración.
 EventOpenWithKey01.button1,Continuar
 TokenSittingRoomDoor2.button2,{action} Tirar abajo
 EventSittingRoomDoor2Break.text,Puedes intentar romper la puerta, pero parece bastante difícil.
@@ -61,11 +61,11 @@ EventCorridor01TablePapersCheck01.text,Lees lo poco que hay legible. Realiza una
 TokenSittingRoomBoxes.button1,{action} Buscar
 TokenSittingRoomBoxes.text,Unas cajas están amontonadas tras el mostrador. Quizá haya algo de utilidad.
 EventCorridor01TablePapersCheckSuccess.text,Parece tratarse de un registro de eventos, como una especie de diario de acontecimientos que se han estado llevando a cabo durante las últimas semanas, escrito con pluma, sin duda. Casi todo es ilegible debido a manchas de tinta y... ¿sangre? La última anotación corresponde a hoy y es de lo poco que se puede leer:\n- Ya han llegado, por fin podremos culminar nuestros planes.\n\nConsigues {c:QItemCorridor01Notes} {MAD20}. Ganas 1 pista {clue}.\n\nDescarta la ficha de búsqueda.
-EventSittingRoomBoxesSearch.text,Encuentras una {c:QItemSittingRoomBoxesItem} {MAD20}.\n\nDescarta la ficha de búsqueda.
+EventSittingRoomBoxesSearch.text,Encuentras una {c:QItemSittingRoomBoxesItem} {MAD20}.\n\nDescarta la ficha de Búsqueda.
 EventSittingRoomBoxesSearch.button1,Continuar
 TokenSittingRoomNotebook.text,Hay una libreta. Su cubierta parece de algún tipo de piel de animal.
 TokenSittingRoomNotebook.button1,{action} Leer
-EventSittingRoomNotebookSearch.text,Encuentras {c:QItemSittingRoomNotebookItem} {MAD20}.\n\nDescarta la ficha de búsqueda.
+EventSittingRoomNotebookSearch.text,Encuentras {c:QItemSittingRoomNotebookItem} {MAD20}.\n\nDescarta la ficha de Búsqueda.
 EventSittingRoomNotebookSearch.button1,Continuar
 TokenBathRoom.text,Seguramente los llantos provenían de detrás de esta puerta.
 TokenBathRoom.button1,{action} Abrir
@@ -89,7 +89,7 @@ TokenCorridor03Door04.text,Una estantería cualquiera, como las demás del pasil
 EventCorridor01ViewMoreShow4.button1,Continuar
 EventCorridor01ViewMoreShow3.button1,Continuar
 EventCorridor01ViewMoreShow5.button1,Continuar
-EventCorridor01ViewMoreShow4.text,Hay una puerta en un lado del pasillo.\n\nColoca una ficha de exploración.
+EventCorridor01ViewMoreShow4.text,Hay una puerta en un lado del pasillo.\n\nColoca una ficha de Exploración.
 EventCorridor02ViewMoreShow01.text,Hay una puerta a un lado del pasillo.
 CustomMonsterCtuluth.monstername,CustomMonster0
 EventFinalMonsterAppear.text,El tejido de la realidad se desgarra...
@@ -97,11 +97,11 @@ CustomMonsterCtuluth.info,-
 EventFinalMonsterAppear.button1,Continuar
 SpawnMonster01A.text,Un tipo con una túnica negra aparece doblando la esquina.\n\n- ¡Han escapado! - grita a la vez que carga hacia vosotros.\n\nColoca una ficha de {c:SpawnMonster01A} {MAD20}.
 SpawnMonster01B.text,Otro tipo con una túnica ensangrentada aparece cerca vuestra.\n\n- No escaparéis de aquí con vida... - susurra mientras lame la sangre de un puñal.\n\nColoca una ficha de {c:SpawnMonster01B} {MAD20}.
-EventCultistDefeated.text,El cultista cae abatido. Cualquier investigador que esté en el mismo espacio que el cuerpo del cultista puede coger el {c:QItemDropMonster01a} {MAD20} que ha dejado caer.\n\nEncontráis, además, un {c:QItemDropMonster01b} {MAD20} colgado de su cuello.\n\nTodos los investigadores ganan 1 pista {clue}.
+EventCultistDefeated.text,El cultista cae abatido, quedando en el suelo {c:QItemDropMonster01a} {MAD20}. Encontráis, además, un {c:QItemDropMonster01b} {MAD20} colgado de su cuello.\n\nComo acción gratuíta, cualquier investigador que esté en el mismo espacio que el cuerpo del cultista puede coger ahora los objetos.\n\nTodos los investigadores ganan 1 pista {clue}.
 EventCultistDefeated.button1,Continuar
 EventBathRoom2Openeda.button1,Continuar
-EventBathRoom2Openedb.text,Coloca una ficha de {c:QItemBathRoomWoodStick} {MAD20} en el suelo, donde solía estar la puerta.\n\nPuedes desplazarte 1 espacio hacia el pasillo.
-EventBathRoom2Openeda.text,Destrozas la vieja puerta de madera. Casi toda la puerta ha parece echa trizas, pero hay algún pedazo que podría valer para algo.
+EventBathRoom2Openedb.text,Coloca una ficha de {c:QItemBathRoomWoodStick} {MAD20} en el suelo, donde solía estar la puerta.\n\nDescarta la ficha de Exploración.\n\nTienes la oportunidad de desplazarte 1 espacio a la zona explorada.
+EventBathRoom2Openeda.text,Destrozas la vieja puerta de madera. Casi en su totalidad está hecha trizas, pero hay algún pedazo que podría valer para algo.
 EventBathRoom2Openedb.button1,Continuar
 TokenCorridor03Desk.button1,{action} Inspeccionar
 EventCorridor03DeskOpen.text,Encuentras {c:QItemKeroseneLantern} {MAD20}.
@@ -122,13 +122,13 @@ EventStartRoundBathroomViewed.button1,Continuar
 SpawnPriestOfDagon.text,Coloca una ficha de El Sacerdote de Dagón{MAD20} en el lugar indicado.
 TokenLibraryItem02.text,Un libro gastado situado en el sillón. Está cerrado.
 TokenLibraryItem02.button1,{action} Abrir
-EventLibraryItem02Open.text,Das un vistazo rápido al libro. Trata sobre rituales acerca de la conexión entre los diferentes planos inexplorados y el nuestro, cuando ciertas condiciones astronómicas se cumplen. Parece más bien un libro de entretenimiento, ¿quién podría tomarse esto en serio?\n\nAunque parece ser que los libros de las estanterías tratan sobre el mismo tema.\n\nPasas algunas páginas para leer un poco más, cuando cae una {c:QItemPhotographicEvidence} {MAD20}.\n\nGanas 2 pistas {clue}.
+EventLibraryItem02Open.text,Das un vistazo rápido al libro. Trata sobre rituales acerca de la conexión entre los diferentes planos inexplorados y el nuestro, cuando ciertas condiciones astronómicas se cumplen. Parece más bien un libro de entretenimiento, ¿quién podría tomarse esto en serio?\n\nAunque parece ser que los libros de las estanterías tratan sobre el mismo tema.\n\nPasas algunas páginas para leer un poco más, cuando cae una {c:QItemPhotographicEvidence} {MAD20}.\n\nGanas 2 pistas {clue}.\n\nDescarta la ficha de Búsqueda.
 EventLibraryItem02Open.button1,Continuar
 TokenLibraryItem01.text,Un viejo diario.
 TokenLibraryItem01.button1,{action} Coger
 EventLibraryItem01B.text,Aquieres {c:QItemOldJournal} {MAD20}. Parece escrito en sangre. Intentas leer algo pero está todo en alguna lengua muerta. Quizá puedas entender algo...
 EventLibraryItem01A.button1,Continuar
-EventLibraryItem01C.text,"¡Eso es!, se trata de una de las lenguas muertas que alguna vez te ayudó a descifrar un amigo al que llevaste material ""confiscado"". No recuerdas mucho, pero lo suficiente como para saber que se trata de rituales relacionados con la magia más oscura; la relacionada con el sacrificio humano.\n\nGanas 1 pista {clue}."
+EventLibraryItem01C.text,"¡Eso es!, se trata de una de las lenguas muertas que alguna vez te ayudó a descifrar un amigo al que llevaste material ""confiscado"". No recuerdas mucho, pero lo suficiente como para saber que se trata de rituales relacionados con la magia más oscura; la relacionada con el sacrificio humano.\n\nGanas 1 pista {clue}.\n\nDescarta la ficha de Búsqueda."
 EventLibraryItem01C.button1,Continuar
 TokenLibraryDoor01.text,Una puerta. Por debajo se aprecia bastante luz. Al otro lado se oye el sonido de algo que se sobrecarga. Quizá una bombilla que esté recibiendo subidas o bajadas de tensión.
 TokenLibraryDoor01.button1,{action} Abrir
@@ -165,14 +165,14 @@ EventBathRoomMirrorOpen02.button1,Continuar
 UIBathRoomMirrorOpen.button1,Continuar
 EventLibraryItem01B.button1,{lore} Descifrar
 TokenGoldenKey.button1,Continuar
-EventGoldenKeyFound.text,Encuentras {c:QItemUniqueGoldKey}{MAD20}.
+EventGoldenKeyFound.text,Encuentras {c:QItemUniqueGoldKey}{MAD20}.\n\nDescarta la ficha de Búsqueda.
 TokenDoorToHailRoom02.text,Detrás de esta puerta se oye algo, puede una respiración agitada, un gruñido y un cuchicheo...\nLa puerta tiene una cerradura de plata y otra muy antigua.
 TokenDoorToHailRoom02.button1,{action} Abrir
 TokenCorridor03DoorSide.text,Una puerta. No se oye nada al otro lado.
 TokenCorridor03DoorSide.button1,{action} Abrir
 EventOfficeDoorOpen01.button1,Continuar
 EventOfficeDoorOpen02A.button1,Continuar
-EventOfficeDoorOpen01.text,Abres la puerta. Esto parece una especie de despacho.\nDescarta el token de investigación de la puerta.
+EventOfficeDoorOpen01.text,Abres la puerta. Esto parece una especie de despacho.\n\nDescarta la ficha de Exploración.
 EventOfficeDoorOpen02B.button1,Continuar
 EventOfficeDoorOpen03.text,Hay un tipo sentado. Conforme entras en la habitación clava su mirada sobre tí, sin parpadear. Comienza a mover la boca, como si estuviera hablando, pero sin pronunciar una sola palabra.\n\nColoca una ficha de Sectario {MAD20} en el lugar indicado.
 EventOfficeDoorOpen03.button1,Continuar
@@ -183,7 +183,7 @@ TokenCultistOffice.text,Parece inconsciente.
 SpawnCultistOffice.button1,Continuar
 EventMonster02Appeared.button1,Continuar
 EventMonster02Appeared.text,La criatura te observa, olfatea el aire y mira tras de tí al tiempo que parece casi sonreír.
-SpawnMonster03.text,Sin apenas hacer ruido, ves cómo una criatura similar a la que ha aparecido en la oficina repta por el techo sin dejar de mirarte, hasta situarte encima tuyo y proferir un rugido estremecedor. Puedes incluso notar cómo su saliva, pegajosa y maloliente, cae sobre tí.\n\nLa situación te supera. Sufres 2 de horror anulados por {will}+1.\n\nColoca una ficha de monstruo en el lugar indicado.
+SpawnMonster03.text,Sin apenas hacer ruido, ves cómo una criatura similar a la que ha aparecido en la oficina repta por el techo sin dejar de mirarte, hasta situarte encima tuyo y proferir un rugido estremecedor. Puedes incluso notar cómo su saliva, pegajosa y maloliente, cae sobre tí.\n\nLa situación te supera. Sufres 2 de horror anulados por {will}+1. Si estás solo en el pasillo, sin ningún otro investigador al alcance que te pueda aportar algo de calma y seguridad, recibe 1 más de horror, esta vez boca arriba.\n\nColoca una ficha de monstruo en el lugar indicado.
 SpawnMonster03.button1,Continuar
 SpawnCultistOffice.text,Atacas a {c:SpawnCultistOffice} {MAD20}, lo que lo espabila.\n\nA partir de ahora sí hay que realizar tiradas de horror y evasión contra él.
 EventCultistOfficeAppear.button1,Continuar
@@ -247,7 +247,7 @@ EventHailRoom01BoxOpened.text,Consigues {c:QItemUniqueSilverKey}{MAD20}.
 EventHailRoom01BoxOpened.button1,Continuar
 EventCorridor03Door02Opened.button1,Continuar
 EventCorridor03Door02NotOpened.text,La puerta no se abre. Quizá podamos encontrar las llaves de la puerta por las otras habitaciones.
-EventCorridor03Door02Opened.text,Utilizas las tres llaves para abrir la puerta, dando paso a un hall enorme.
+EventCorridor03Door02Opened.text,Utilizas las tres llaves para abrir la puerta, dando paso a un hall enorme.\n\nDescarta la ficha de Exploración.
 EventCorridor03Door02NotOpened.button1,Continuar
 TokenDog.text,- ¡Boof, boof!
 TokenDog.button1,{action} Acariciar
@@ -267,7 +267,7 @@ EventDoorToHailRoom02Opened03.button1,Claro cariño, ven conmigo, yo te proteger
 EventDoorToHailRoom02Opened04.button1,Continuar
 EventDoorToHailRoom02Opened03A.button1,Continuar
 EventDoorToHailRoom02Opened03.button2,No, solo estoy buscando una llave.
-EventDoorToHailRoom02Opened03A.text,La niña sonríe y parece más tranquila. Baja el arma y se dispone a seguirte. Te agarra de la ropa con una mano; parece sentirse más protegida. El perro no se separa de ella.\n\nA partir de ahora la niña y el perro te seguirán allá donde vayas. Como acción de intercambio la niña podrá cambiar el investigador con el que va, pero el perro siempre irá junto a la niña.\n\nDescarta 1 carta de horror boca arriba. Si no tienes ninguna, descarta 1 carta de horror boca abajo.\n\nEstá claro que no tenían nada bueno pensado para esta niña. Seguramente tenían pensado ofrecerla en sacrificio a alguna deidad...mejor ni pensarlo.\n\nGanas 2 pistas {clue}.\n\nSi hay algún monstruo al alcance del perro, este ataca. Su ataque se considera Arma de Filo. Los atributos del perro son:\n3 {strength}\n4 {agility}\n1 {lore}\n2 {influence}\n5 {observation}\n\nDe igual manera, el perro puede ser receptor de ataques. Tiene 5 puntos de vida y 4 de horror. En cada ronda se repetirán los atributos del perro.
+EventDoorToHailRoom02Opened03A.text,La niña sonríe y parece más tranquila. Baja el arma y se dispone a seguirte. Te agarra de la ropa con una mano; parece sentirse más protegida. El perro no se separa de ella.\n\nA partir de ahora la niña y el perro te seguirán allá donde vayas. Como acción de intercambio la niña podrá cambiar el investigador con el que va, pero el perro siempre irá junto a la niña.\n\nDescarta 1 carta de horror boca arriba. Si no tienes ninguna, descarta 1 carta de horror boca abajo.\n\nEstá claro que no tenían nada bueno pensado para esta niña. Seguramente tenían pensado ofrecerla en sacrificio a alguna deidad...mejor ni pensarlo.\n\nGanas 2 pistas {clue}.\n\nSi hay algún monstruo al alcance del perro, este ataca. Su ataque se considera Arma de Filo. Los atributos del perro son:\n3 {strength}\n4 {agility}\n1 {lore}\n2 {influence}\n5 {observation}\n\nDe igual manera, el perro puede ser receptor de ataques. Tiene 5 puntos de vida y 4 de horror. En cada ronda se repetirán los atributos del perro. No obstante, es recomendable apuntarlos para cuando realice u reciba un ataque. Si el perro es derrotado en algún momento, todos los investigadores a su alcance reciben 1 de horror y lo llevarán con ellos para sacarlo de ese lugar.
 EventDoorToHailRoom02Opened03B01.button1,Continuar
 EventDoorToHailRoom02Opened03B03.text,Se te hiela la sangre al escuchar un gruñido, seguido de ladridos y gritos de horror de la niña...\n\n¿Qué has hecho? Has sentenciado a esa pobre criatura a una muerte segura.\n\nTus remordimientos pueden contigo. Sufres 3 de horror anulados por {will} -1. Luego pon boca arriba 2 cartas de horror.
 EventDoorToHailRoom02Opened03B02.button1,Continuar
@@ -275,28 +275,28 @@ EventDoorToHailRoom02Opened03B01.text,El rostro de la niña se llena de tristeza
 EventDoorToHailRoom02Opened03B02.text,- ¡No os necesitamos! Vamos Toby, salgamos de aquí.\n\nLa niña te aparta y se marcha lámpara en mano por donde has venido.
 EventDogAttack.button1,Continuar
 EventDoorToHailRoom02Opened03B03.button1,Continuar
-EventDogAttack.text,Si hay algún monstruo al alcance del perro, este ataca. Su ataque se considera Arma de Filo. Los atributos del perro son:\n3 {strength}\n4 {agility}\n1 {lore}\n2 {influence}\n5 {observation}\n\nDe igual manera, el perro puede ser receptor de ataques. Tiene 5 puntos de vida y 4 de horror.\n
+EventDogAttack.text,Si hay algún monstruo al alcance del perro, este ataca. Su ataque se considera Arma de Filo. Los atributos del perro son:\n3 {strength}\n4 {agility}\n1 {lore}\n2 {influence}\n5 {observation}\n\nDe igual manera, el perro puede ser receptor de ataques. Tiene 4 puntos de vida y 3 de horror. Es recomendable apuntarlos para cuando realice u reciba un ataque. Si el perro es derrotado en algún momento, todos los investigadores a su alcance reciben 1 de horror y lo llevarán con ellos para sacarlo de ese lugar.\n
 TokenWardrobe01.text,Un armario.
 TokenWardrobe01.button1,{action} Abrir
-EventWardrobe01OpenedDifficulty01.text,Encuentras un {c:QItemFireWeapon01}{MAD20}.
+EventWardrobe01OpenedDifficulty01.text,Encuentras un {c:QItemFireWeapon01}{MAD20}.\n\nDescarta la ficha de Búsqueda.
 EventWardrobe01OpenedDifficulty01.button1,Continuar
-EventWardrobe01OpenedDifficulty02.text,Encuentras {c:QItemWeapon01}{MAD20}.
+EventWardrobe01OpenedDifficulty02.text,Encuentras {c:QItemWeapon01}{MAD20}.\n\nDescarta la ficha de Búsqueda.
 EventWardrobe01OpenedDifficulty02.button1,Continuar
-EventWardrobe01OpenedDifficulty03.text,Encuentras {c:QItemRandomClue}{MAD20}.
+EventWardrobe01OpenedDifficulty03.text,Encuentras {c:QItemRandomClue}{MAD20}.\n\nDescarta la ficha de Búsqueda.
 EventWardrobe01OpenedDifficulty03.button1,Continuar
 TokenGoldenKey.text,Una mesilla de noche. Tiene un cajón, pero parece cerrado.
 EventGoldenKeyFound.button1,Continuar
 TokenCorridor02ViewMore.button1,Continuar
-EventCorridor02ViewMoreShow05.text,Cuando un investigador esté cerca, podrá ver qué hay más allá.
+EventCorridor02ViewMoreShow05.text,Cuando un investigador esté cerca, podrá ver qué hay más allá.\n\nColoca una ficha de Vistazo.
 EventCorridor02ViewMore01.button1,Continuar
 EventCorridor02ViewMore02.button1,Continuar
 TokenCorridor02ViewMore.text,¿Echas un vistazo?
 EventCorridor02ViewMoreShow04.text,Una última puerta al final del pasillo.
 EventCorridor02ViewMore01.text,Ves el final del pasillo.
-EventCorridor02ViewMore05.text,Coloca 2 fichas de pared al final del pasillo. No hay más puertas.
+EventCorridor02ViewMore05.text,Coloca una ficha de pared al final del pasillo. No hay más puertas.
 EventCorridor02ViewMore02.text,Hay una puerta a un lado.
 TokenCorridor04Door01.text,Parece cerrada, incluso atrancada.
-EventCorridor02ViewMore03.text,Hay una puerta al otro lado. Suena un piano al otro lado...como si alguien lo hubiera golpeado.
+EventCorridor02ViewMore03.text,Hay una puerta al final. Suena un piano al otro lado...como si alguien lo hubiera golpeado con fuerza.
 TokenCorridor04Door01.button1,Continuar
 SpawnGotAllKeysDifficulty02.button1,Continuar
 SpawnGotAllKeysDifficulty02.text,Aparece un {c:SpawnGotAllKeysDifficulty02}{MAD20} desde la puerta cerrada más cercana a un investigador.\n\nColoca una ficha de {c:SpawnGotAllKeysDifficulty02}{MAD20} donde corresponda.
@@ -330,12 +330,12 @@ EventPianoRoomDoorOpened03.button1,Continuar
 TokenBilliardsItem01.text,Varias botellas de alcohol.
 TokenBilliardsItem01.button1,{action} Buscar
 EventBilliardsItem01Searched01.button1,Continuar
-EventBilliardsItem01Searched02.text,Entre las botellas también encuentras {c:QItemUniqueIncriminatingEvidence}{MAD20}.
+EventBilliardsItem01Searched02.text,Entre las botellas también encuentras {c:QItemUniqueIncriminatingEvidence}{MAD20}.\n\nDescarta la ficha de Búsqueda.
 TokenBilliardsItem02.text,Hay una mesa con varios papeles encima.
 TokenBilliardsItem02.button1,Continuar
 EventBilliardsItem02Searched.button1,Continuar
 EventBilliardsItem01Searched01.text,Encuentras {c:QItemCommonWhiskey}{MAD20}.
-EventBilliardsItem02Searched.text,Encuentras {c:QItemUniqueConclusiveEvidence}{MAD20}.
+EventBilliardsItem02Searched.text,Encuentras {c:QItemUniqueConclusiveEvidence}{MAD20}.\n\nDescarta la ficha de Búsqueda.
 EventBilliardsItem01Searched02.button1,Continuar
 EventPuzzleSittingRoomResolved03.button1,Continuar
 EventPuzzleSittingRoomResolved01.text,El mecanismo se abre.
@@ -396,14 +396,14 @@ EventEndGood01A.button1,Continuar
 EventEndGood01B.text,¿Qué ha pasado exactamente? ¿Qué acabáis de vivir? ¿De verdad todo ha terminado? Aquellos que aún estáis en pie, os miráis unos a otros atónitos, incrédulos pese a ver visto con vuestros propios ojos los horrores no solo del más allá, sino los que los propios humanos, en su desesperación, son capaces de llevar a cabo.\nEsa pobre niña...y su perro. ¿Por qué?, ¿por qué tuvo que acabar así? Puede que vuestro corazón siga bombeando sangre, que el aire llene vuestros pulmones, pero no tenéis claro si habéis sobrevivido o si, por el contrario, estáis conenados a la infinidad de horrores que someterán vuestra mente durante el resto de vuestras vidas.\nEsto...¿realmente ha acabado?
 EventEndGood01A.text,Los Sectarios os miran, atónitos ante la muerte de su líder. Sin su poder son incapaces de controlar el portal. Un fuerte viento arrastra todo lo que hay en la habitación hacia el portal. Por los pelos conseguís sujetaros donde podéis; los Sectarios no han corrido con la misma suerte, todos son absorvidos por el portal, donde la Semilla Estelar los recibe como se merecen, con una muerte lenta llena de horrores inimaginables...
 EventEndGood01B.button1,Continuar
-EventLibraryDoor01Opened06.text,Descarta el token de la puerta de la biblioteca.
+EventLibraryDoor01Opened06.text,Descarta la ficha de Exploración.\n\nTienes la oportunidad de desplazarte 1 espacio a la zona explorada.
 EventLibraryDoor01Opened06.button1,Continuar
-EventDoorToHailRoom02Opened06.text,Descarta el token de la puerta.
+EventDoorToHailRoom02Opened06.text,Descarta la ficha de Exploración.\n\nTienes la oportunidad de desplazarte 1 espacio a la zona explorada.
 EventDoorToHailRoom02Opened06.button1,Continuar
 EventCorridor02ViewMoreShow06.button1,Continuar
 EventCorridor02ViewMoreShow03.text,Coloca una ficha de pared en el lugar indicado. Aquí no hay ninguna puerta.
 TokenCorridor03Door03.button1,Continuar
-EventCorridor01ViewMoreShow5.text,Hay otra puerta más al final del pasillo.\n\nColoca una ficha de exploración.
+EventCorridor01ViewMoreShow5.text,Hay otra puerta más al final del pasillo.\n\nColoca una ficha de Exploración.
 TokenCorridor03Door03.text,Tan solo una estantería.
 TokenCorridor03Door04.button1,Continuar
 EventCorridor01ViewMoreShow2.text,Coloca una ficha de pared en el lugar indicado. Aquí no hay ninguna puerta.
@@ -427,3 +427,13 @@ UIIntroductionContinueText.uitext,Continuar
 UIIntroductionText.uitext,El concepto de lo sobrenatural no deja a nadie indiferente. Aunque siempre habrán escépticos, lo cierto es que cada vez hay más y más adeptos a todo tipo de cultos que estudian lo paranomal.\n\nY no hay que olvidarse de un tercer tipo: esas personas que ni creen ni dejan de creer; personas que quieren aprender de esas sectas y sus creencias, comprender sus motivaciones, quizá con la ilusión de llegar a ver lo que ellos no pueden ver. ¿Qué encuentran estos cultos en lo que hacen?, ¿por qué llegan a los extremos que algunos llegan?\n\nMuchos han sido los años de investigación que habéis dedicado cada uno, por separado, al estudio de los diferentes cultos de toda índole, desde los satánicos a los más puro estilo lovecraft. Y eso, compañeros de oficio, es lo que os ha traido hasta aquí.
 EventCenterCameraStartGame.text,Al menos una cosa tenéis clara: tenéis que salir de aquí.
 EventCenterCameraStartGame.button1,Entendido
+EventCorridor04Door02Opened03.text,Descarta la ficha de Exploración.\n\nTienes la oportunidad de desplazarte 1 espacio a la zona explorada.
+EventCorridor04Door02Opened03.button1,Continuar
+EventBathRoomGoInside.text,Tienes la oportunidad de desplazarte 1 espacio a la zona explorada.
+EventBathRoomGoInside.button1,Continuar
+EventCorridor01ViewMoreShow6.text,Descarta la ficha de Vistazo.
+EventCorridor01ViewMoreShow6.button1,Continuar
+EventCorridor02ViewMore06.button1,Continuar
+EventPianoRoomDoorOpened04.text,Descarta la ficha de Exploración.\n\nTienes la oportunidad de desplazarte 1 espacio a la zona explorada.
+EventCorridor02ViewMore06.text,Descarta la ficha de Vistazo.
+EventPianoRoomDoorOpened04.button1,Continuar
