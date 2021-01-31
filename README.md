@@ -4,7 +4,7 @@
 
 ## Versiones
 
-### 0.7.1 (2021/01/03)
+### 0.7.1 (2021/01/31)
 
 Fixes menores relacionados con textos.
 
@@ -15,3 +15,7 @@ Ajustes menores relacionados con descarta de fichas de Búsqueda/Exploración/Vi
 Agregada imagen al scenario.
 
 Ajustado flujo de algunos eventos relacionados con el final del juego.
+
+Ajuste importante en todos los finales posibles.
+
+Ajuste importante en el comienzo del juego.
