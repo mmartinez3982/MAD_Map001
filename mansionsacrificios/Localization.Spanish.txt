@@ -119,7 +119,7 @@ EventBathRoomMirrorOpen03.text,¡Es otra vez ese llanto! ¡Está ahí contigo, e
 EventBathRoomMirrorOpen05.button1,Continuar
 EventBathRoomMirrorOpen04.text,Corres la cortina a un lado de golpe. Encuentras el cuerpo sin vida de una mujer de unos cuarenta y tantos. Dado el olor y el estado de descomposición, parece llevar muerta varios días.\n\nGanas 1 pista {clue} y 1 de horror. Todo el que esté en el baño también se lleva 1 de horror.
 EventStartRoundBathroomViewed.button1,Continuar
-SpawnPriestOfDagon.text,Coloca una ficha de El Sacerdote de Dagón{MAD20} en el lugar indicado.
+SpawnPriestOfDagon.text,Coloca una ficha de {c:SpawnPriestOfDagon}{MAD20} en el lugar indicado.
 TokenLibraryItem02.text,Un libro gastado situado en el sillón. Está cerrado.
 TokenLibraryItem02.button1,{action} Abrir
 EventLibraryItem02Open.text,Das un vistazo rápido al libro. Trata sobre rituales acerca de la conexión entre los diferentes planos inexplorados y el nuestro, cuando ciertas condiciones astronómicas se cumplen. Parece más bien un libro de entretenimiento, ¿quién podría tomarse esto en serio?\n\nAunque parece ser que los libros de las estanterías tratan sobre el mismo tema.\n\nPasas algunas páginas para leer un poco más, cuando cae una {c:QItemPhotographicEvidence} {MAD20}.\n\nGanas 2 pistas {clue}.\n\nDescarta la ficha de Búsqueda.
@@ -177,7 +177,7 @@ EventOfficeDoorOpen02B.button1,Continuar
 EventOfficeDoorOpen03.text,Hay un tipo sentado. Conforme entras en la habitación clava su mirada sobre tí, sin parpadear. Comienza a mover la boca, como si estuviera hablando, pero sin pronunciar una sola palabra.\n\nColoca una ficha de Sectario {MAD20} en el lugar indicado.
 EventOfficeDoorOpen03.button1,Continuar
 SpawnMonster02.button1,Continuar
-SpawnMonster02.text,Acto seguido se desploma y aparece frente a tí y aparece un {c:SpawnMonster02} {MAD20}.\n\nColoca su ficha en el lugar indicado.
+SpawnMonster02.text,Acto seguido el sectario se desploma sobre el escritorio y aparece frente a tí, como de la nada, un {c:SpawnMonster02} {MAD20}.\n\nColoca su ficha en el lugar indicado.
 TokenCultistOffice.button1,{action} Atacar
 TokenCultistOffice.text,Parece inconsciente.
 SpawnCultistOffice.button1,Continuar
@@ -190,7 +190,7 @@ EventCultistOfficeAppear.button1,Continuar
 EventCultistOfficeAppear.text,Acto seguido se desploma y aparece frente a tí y aparece un {c:SpawnMonster02} {MAD20}.\n\nColoca su ficha en el lugar indicado.
 EventCorridor02ViewMoreShow06.text,Tienes la oportunidad de desplazarte 1 espacio a la zona explorada.
 EventCorridor02ViewMoreShow05.button1,Continuar
-quest.name,La mansión de los sacrificios (v0.7)
+quest.name,La mansión de los sacrificios (v0.7.1)
 EventInit01A.button1,Continuar
 EventInit01B.text,No conocéis vuestro pasado, pero sí sabéis lo difícil que ha sido siempre vuestro camino...
 EventInit01B.button2,Todo lo que habéis conseguido, lo habéis luchado
@@ -207,13 +207,13 @@ EventInit02A.text,{rnd:hero} encuentra {c:QItemRandomFireWeapon01} {MAD20} bajo 
 EventInit02C.button1,Continuar
 SpawnMonster01A.button1,Continuar
 SpawnMonster01B.button1,Continuar
-Spawn0.text,¡Algo ha entrado por la ventana del salón!\n\nColoca una ficha de {c:QItemMonsterRandomWindow} {MAD20} en el lugar indicado. Si hay algún investigador en el salón recibe 1 de horror.
-Spawn0.button1,Continuar
+SpawnWindowMaxDifficulty.button1,Continuar
+EventDoorToHailRoom02Opened03B.text,Aunque el perro irá todo el rato junto a la niña, que lleváis a vuestro lado, la ficha se quedará aquí visible para que podáis interactuar con el perro e indicar si ha sido o no derrotado.
 SpawnMonsterRandomWindow.text,¡Algo ha entrado por la ventana del salón!\n\nColoca una ficha de {c:SpawnMonsterRandomWindow} en el lugar indicado.\n\nSi hay algún investigador en {rnd:tile} recibe 1 de horror {rnd:dmg}.
 SpawnMonsterRandomWindow.button1,Continuar
 SpawnMonster03B.button1,Continuar
 SpawnMonster03B.text,Cuando consigues quitar la mirada del {c:SpawnMonster03} {MAD20}, algo atrae tu atención. Una figura se alza rígida, tranquila, tras una mesa que hay en el pasillo. Con la mirada del más fiero cazador, la figura se agazapa, preparada para atacar.\n\nColoca una ficha de {c:SpawnMonster03B}{MAD20} en el lugar indicado.\n\nTodo investigador que esté presenciando la escena sufre 1 de horror debido a lo inaudito de la situación; vais a morir, es un hecho.
-TokenCorridor03DoorFront.text,Está bloqueada, no parece que podáis abrirla. Ruidos extraños provienen del interior.
+TokenCorridor03DoorFront.text,Está bloqueada, no parece que podáis abrirla. Ruidos extraños provienen del otro lado.
 TokenCorridor03DoorFront.button1,Continuar
 SpawnMonster05.text,La puerta del final del pasillo se abre y una criatura cruza su umbral, con la boca ensangrentada. Esta estudia el entorno, en busca de su próxima presa.\n\nLa criatura fija su mirada en el investigador que más cerca esté, dentro su alcance. Este sufre 2 de horror anulados por {will} +1. Si no hay ningún investigador al alcance de la criatura, esta avanza un espacio hacia el investigador más cercano y profiere un ensordecedor chirrido. Todo investigador al alcance de la criatura sufre 1 de horror. Luego colocan 1 ficha de horror boca arriba.
 SpawnMonster05.button1,Continuar
@@ -256,10 +256,10 @@ EventDogStroked.text,El perro mueve el rabo como muestra de agrado. Luego la apa
 EventDogStrokedFirstTime.text,El perro mueve el rabo como muestra de su alegría y hace alguna monería. Os reconforta la compañía de un ser tan fiel como este en un momento tan difícil... Todo el que esté al alcance del perro descarta todo el horror boca arriba. Si no tienes ningún horror boca arriba, descarta 1 de horror.
 EventDogStroked.button1,Continuar
 EventDoorToHailRoom02Opened01.button1,Continuar
-EventDoorToHailRoom02Opened04.text,Junto a la puerta hay un armario.
+EventDoorToHailRoom02Opened04.text,Junto a la puerta hay un armario.\n\nColoca una ficha de Búsqueda.
 EventDoorToHailRoom02Opened01.text,La puerta da paso a una habitación.
 EventDoorToHailRoom02Opened02.text,En cuanto abres la puerta un perro se abalanza sobre tí. Te hace 1 de daño anulado por {agility} +1.\n\nColoca una ficha de perro en el lugar indicado.
-EventDoorToHailRoom02Opened05.text,Al fondo de la habitación hay un cofre.
+EventDoorToHailRoom02Opened05.text,Al fondo de la habitación hay un cofre.\n\nColoca una ficha de Búsqueda.
 EventDoorToHailRoom02Opened05.button1,Continuar
 EventDoorToHailRoom02Opened02.button1,Continuar
 EventDoorToHailRoom02Opened03.text,Junto al perro aguardaba una niña con una lámpara en la mano, dispuesta a atacarte. Pero al verte la expresión parece haberle cambiado, y baja el arma improvisada al tiempo que intenta calmar al perro:\n\n- No Toby, ¡quieto! Estos no son malos, ¿verdad?\n\nLa chiquilla duda un poco mientras que vuelve a colocar sus manos firmemente sobre la lámpara.\n\n- No lleváis túnicas ni tenéis esa mirada... ¿habéis venido a rescatarme?
@@ -267,7 +267,7 @@ EventDoorToHailRoom02Opened03.button1,Claro cariño, ven conmigo, yo te proteger
 EventDoorToHailRoom02Opened04.button1,Continuar
 EventDoorToHailRoom02Opened03A.button1,Continuar
 EventDoorToHailRoom02Opened03.button2,No, solo estoy buscando una llave.
-EventDoorToHailRoom02Opened03A.text,La niña sonríe y parece más tranquila. Baja el arma y se dispone a seguirte. Te agarra de la ropa con una mano; parece sentirse más protegida. El perro no se separa de ella.\n\nA partir de ahora la niña y el perro te seguirán allá donde vayas. Como acción de intercambio la niña podrá cambiar el investigador con el que va, pero el perro siempre irá junto a la niña.\n\nDescarta 1 carta de horror boca arriba. Si no tienes ninguna, descarta 1 carta de horror boca abajo.\n\nEstá claro que no tenían nada bueno pensado para esta niña. Seguramente tenían pensado ofrecerla en sacrificio a alguna deidad...mejor ni pensarlo.\n\nGanas 2 pistas {clue}.\n\nSi hay algún monstruo al alcance del perro, este ataca. Su ataque se considera Arma de Filo. Los atributos del perro son:\n3 {strength}\n4 {agility}\n1 {lore}\n2 {influence}\n5 {observation}\n\nDe igual manera, el perro puede ser receptor de ataques. Tiene 5 puntos de vida y 4 de horror. En cada ronda se repetirán los atributos del perro. No obstante, es recomendable apuntarlos para cuando realice u reciba un ataque. Si el perro es derrotado en algún momento, todos los investigadores a su alcance reciben 1 de horror y lo llevarán con ellos para sacarlo de ese lugar.
+EventDoorToHailRoom02Opened03A.text,La niña sonríe y parece más tranquila. Baja el arma y se dispone a seguirte. Te agarra de la ropa con una mano; parece sentirse más protegida. El perro no se separa de ella.\n\nA partir de ahora la niña y el perro te seguirán allá donde vayas. Como acción de intercambio la niña podrá cambiar el investigador con el que va, pero el perro siempre irá junto a la niña.\n\nDescarta 1 carta de horror boca arriba. Si no tienes ninguna, descarta 1 carta de horror boca abajo.\n\nEstá claro que no tenían nada bueno pensado para esta niña. Seguramente tenían pensado ofrecerla en sacrificio a alguna deidad...mejor ni pensarlo.\n\nGanas 2 pistas {clue}.\n\nSi hay algún monstruo al alcance del perro, este ataca. Su ataque se considera Arma de Filo. Los atributos del perro son:\n3 {strength}\n4 {agility}\n1 {lore}\n2 {influence}\n5 {observation}\n\nDe igual manera, el perro puede ser receptor de ataques. Tiene 5 puntos de vida y 4 de horror. En cada ronda se repetirán los atributos del perro. No obstante, es recomendable apuntarlos para cuando realice u reciba un ataque. Si el perro es derrotado en algún momento, todos los investigadores reciben 1 de horror boca arriba. Además, lo llevarán con ellos para sacarlo de ese lugar. Esto no supondrá penalización alguna para el que lo cargue.
 EventDoorToHailRoom02Opened03B01.button1,Continuar
 EventDoorToHailRoom02Opened03B03.text,Se te hiela la sangre al escuchar un gruñido, seguido de ladridos y gritos de horror de la niña...\n\n¿Qué has hecho? Has sentenciado a esa pobre criatura a una muerte segura.\n\nTus remordimientos pueden contigo. Sufres 3 de horror anulados por {will} -1. Luego pon boca arriba 2 cartas de horror.
 EventDoorToHailRoom02Opened03B02.button1,Continuar
@@ -358,35 +358,35 @@ EventLobbyShow02.text,En el centro, algo comienza a aparecer. Podría ser, un po
 EventLobbyShow02.button1,Continuar
 EventLobbyShow03.text,Abajo, un tipo siniestro, con la cara desencajada por la rabia y la locura, recita unas palabras diferentes a las del resto.\n\nNo parece alterarse por vuestra presencia, nadie lo hace.\n\nUnos instantes después de haber cruzado el umbral de la puerta, el tipo deja de recitar y fija la mirada sobre vosotros.
 EventLobbyShow03.button1,Continuar
-EventLobbyShow04.text,- Llegáis justo a tiempo. Sabía que podía confiar en vuestras capacidades - dice con voz extrañamente sosegada, al tiempo que sube las escaleras y se sitúa junto a vosotros.\n- El ritual ya ha comenzado; la sangre de cinco devotos, para abrir las puertas - dice mientras coge a la niña del brazo.
+EventLobbyShow04.text,- Llegáis justo a tiempo. Sabía que podía confiar en vuestras capacidades - dice con voz extrañamente sosegada, al tiempo que sube las escaleras y se sitúa junto a vosotros.\n\n- El ritual ya ha comenzado; la sangre de cinco devotos, para abrir las puertas - dice mientras coge a la niña del brazo.
 EventLobbyShow04.button1,Continuar
-EventLobbyShow05.button1,Continuar
+EventLobbyShow05A.text,Cuando intentáis evitarlo os dáis cuenta de que no podéis moveros. Toby gruñe e intenta moverse, pero se  encuentra en la misma situación que vosotros.\n\n- El cuerpo de un animal fiel - dice mientras coge al perro y lo arroja al portal. Justo antes de desaparecer en el portal se escucha al pobre animal proferir chillidos de terror y frustración. Una sonrisa maléfica se dibuja en el rostro del tipo.
 EventLobbyShow06.button1,Continuar
-EventLobbyShow05.text,Cuando intentáis evitarlo os dáis cuenta de que no podéis moveros. Toby gruñe e intenta moverse, pero se  encuentra en la misma situación que vosotros.\n- El cuerpo de un animal fiel - dice mientras coge al perro y lo arroja al portal. Justo antes de desaparecer en el portal se escucha al pobre animal proferir chillidos de terror y frustración. Una sonrisa maléfica se dibuja en el rostro del tipo.
+EventLobbyShow05B.text,Cuando intentáis evitarlo os dáis cuenta de que no podéis moveros.\n\n- Miráos, ni siquiera habéis sido capaces de salvar al perro; patético.\n\nTodos los investigadores reciben 1 de horror.\n\n- En fin, ¿por dónde iba? Ah sí, el cuerpo de un animal fiel - dice mientras coge al perro y lo arroja al portal. Veis el cuerpo del pobre animal desaparecer en el portal. Poco después escucháis unos sonidos de algo que estáis seguros que no es de este mundo. ¿De verdad está pasando todo esto?, ¿es real?.\n\nOs dáis cuenta de que el tipo observa vuestra reacción de tristeza con un placer macabro. Una sonrisa maléfica se dibuja en su rostro.
 EventLobbyShow07A.text,Había confiado en vosotros, creía firmemente que la salvaríais y la pobre ha muerto de una manera horrible. ¡Y no habéis podido hacer nada!\n\nTodos los investigadores reciben 1 de horror anulado por {will} -1.
-EventLobbyShow06.text,- La sangre de una virgen inocente como ofrenda para el todopoderoso - pronuncia al tiempo que coloca a la niña en un altar y comienza a rajar su cuello con un puñal. La niña os mira, con el rostro lleno de lágrimas y gorgoteando sangre, ahogándose.\nCuando finalmente la niña deja de respirar, cierra los ojos y su cuerpo se relaja. Ya descansa...pobre criatura.
+EventLobbyShow06.text,- La sangre de una virgen inocente como ofrenda para el todopoderoso - pronuncia al tiempo que coloca a la niña en un altar y comienza a rajar su cuello con un puñal. La niña os mira, con el rostro lleno de lágrimas y gorgoteando sangre, ahogándose.\n\nCuando finalmente la niña deja de respirar, cierra los ojos y su cuerpo se relaja. Ya descansa...pobre criatura.
 EventLobbyShow07A.button1,Continuar
-EventLobbyShow07B.text,Teníais que haberla ayudado, ¿en qué estábais pensando para no ayudar a una probre chiquilla en apuros?, ¿qué otro destino esperaba a una niña en un sitio como este?\n\nTodos los investigadores reciben 1 de horror boca arriba anulado por {will} -2.
+EventLobbyShow07B.text,Teníais que haberla ayudado, ¿en qué estábais pensando para no ayudar a una probre chiquilla en apuros?, ¿qué otro destino esperaba a una niña en un sitio como este?\n\nTodos los investigadores reciben 2 de horror boca arriba anulado por {will} -2.
 EventLobbyShow07B.button1,Continuar
-EventLobbyShow08.text,El tipo se gira hacia vosotros:\n- Y la sangre de aquellos que pretenden impedir su llegada a este mundo.\nLame la hoja de la daga, aún cubierta de la sangre de la niña y se acerca a vosotros. Sentís que ya podéis moveros con libertad. Es hora de vengarla y hacer pagar a esta escoria por todo el daño que han hecho para llegar hasta donde han llegado.
+EventLobbyShow08.text,El tipo se gira hacia vosotros:\n- Y la sangre de aquellos que pretenden impedir su llegada a este mundo.\n\nLame la hoja de la daga, aún cubierta de la sangre de la niña y se acerca a vosotros. Os hace un corte a cada uno con la daga y arroja la sangre al portal.\n\nTodos los investigadores reciben 1 de daño.\n\nCuando vuestra sangre entra en el vórtice, sentís que ya podéis moveros con libertad. Ha llegado la hora de la venganza, de hacer pagar a esta escoria por todo el daño que han hecho para llegar hasta donde han llegado.
 EventLobbyShow08.button1,Continuar
 EventLobbyShow09.text,Los demás sectarios siguen pronunciando las palabras del ritual. Algo comienza a aparecer a través del portal...
 EventLobbyShow09.button1,Continuar
-EventLobbyShow10.text,Coloca una ficha de Semilla Estelar {MAD20} en el lugar indicado. Por el momento los investigadores no tendrán que esquivarlo ni realizar tiradas de horror contra él.
-EventLobbyShow10.button1,Continuar
-EventLobbyShow11.text,Todos los investigadores pueden actuar como si de un nuevo turno se tratara, incluso aquellos que ya hayan actuado. No dejéis que este  El Sacerdote de Dagón{MAD20} se salga con la suya; ¡acabad con su vida antes de que sea demasiado tarde!
+EventLobbyShow10A.button1,Continuar
+EventLobbyShow10B.text,Coloca una ficha de Semilla Estelar {MAD20} en el lugar indicado. Por el momento los investigadores no tendrán que esquivarlo ni realizar tiradas de horror contra él. Pero lo que está atravesando el portal es tan aterrador...\n\nTodos los investigadores reciben 1 de horror anulado por {will} - 1.
+EventLobbyShow11.text,Todos los investigadores pueden actuar como si de un nuevo turno se tratara, incluso aquellos que ya hayan actuado.\n\nQuizá podáis detener esta locura acabando con el líder antes de que esa criatura atraviese el portal. No dejéis que este {c:SpawnPriestOfDagon}{MAD20} se salga con la suya; ¡acabad con su vida antes de que sea demasiado tarde!
 EventLobbyShow11.button1,Continuar
 EventLobbyShow12.text,A vuestro lado véis una puerta atrancada con tablones.
 EventLobbyShow12.button1,Continuar
 EventLobbyShow13.text,Al fondo, a un lado, igual.
 EventLobbyShow13.button1,Continuar
-EventLobbyShow14.text,La puerta principal está entreabierta, quizá podáis salir por ahí.\n\nColoca una ficha de exploración en el lugar indicado.
+EventLobbyShow14.text,La puerta principal está entreabierta, quizá podáis salir por ahí.\n\nColoca una ficha de Exploración en el lugar indicado.
 EventLobbyShow14.button1,Continuar
 TokenLobbyExit.text,La puerta está entreabierta. ¿Te vas?
 TokenLobbyExit.button1,{action} Salir de aquí; sálvese quien pueda.
-EventLobbyShow15.text,La puerta del fondo a la derecha parece igualmente atrancada.
+EventLobbyShow15.text,La puerta del fondo a la derecha parece igualmente bloqueada.
 EventLobbyShow15.button1,Continuar
-EventLobbyShow16.text,Y la puerta que tenéis cerca, también parece atrancada.
+EventLobbyShow16.text,Y la puerta que tenéis cerca, también está atrancada.
 EventLobbyShow16.button1,Continuar
 SpawnStarSpawn.button1,Continuar
 SpawnStarSpawn.text,El tejido de la realidad se resquebraja, una figura grotesca y enorme se abre paso desde el portal. El destino está escrito. La peor de las muertes que habíais imaginado tener a lo largo de vuestra vida es ahora un sueño fuera de vuestro alcance.\n\nColoca una ficha de {c:SpawnStarSpawn}{MAD20} en el lugar indicado.
@@ -412,7 +412,7 @@ EventStartRoundBathroomViewed.text,Unos golpes provienen de la habitación que h
 SpawnPriestOfDagon.button1,Continuar
 EventEndGood02A.button1,Continuar
 EventEndGood02A.text,La criatura se tambalea...¿realmente habéis acabado con ella? La mansión comienza a tambalearse; un terremoto parece haberse iniciado.\nLos Sectarios os miran, atónitos ante la caída de lo que creían su nuevo dios. Su incredulidad y los temblores cada vez mayores los hace incapaces de controlar el portal. Un fuerte viento arrastra todo lo que hay en la habitación hacia el portal. Por los pelos conseguís sujetaros donde podéis; los Sectarios no han corrido con la misma suerte, todos son absorvidos por el portal, donde una figura más grande si cabe que la que acabáis de derrotar los recibe como se merecen, con una muerte lenta llena de horrores inimaginables...
-quest.description,Una amnesia repentina y el hecho de que despertáis en una mansión desconocida sientan las bases de esta historia.
+quest.description,Una amnesia repentina y el hecho de que despertáis en una mansión desconocida sientan las bases de esta historia. ¿Podréis desentrañar los misterios que esconde esta mansión?
 TokenLobbyCultist05.text,No parece relevante centraros en él.
 TokenLobbyCultist05.button1,Continuar
 TokenLobbyCultist04.text,Una mujer cultista. Su mirada...parece perdida.
@@ -437,3 +437,15 @@ EventCorridor02ViewMore06.button1,Continuar
 EventPianoRoomDoorOpened04.text,Descarta la ficha de Exploración.\n\nTienes la oportunidad de desplazarte 1 espacio a la zona explorada.
 EventCorridor02ViewMore06.text,Descarta la ficha de Vistazo.
 EventPianoRoomDoorOpened04.button1,Continuar
+SpawnWindowMaxDifficulty.text,¡Algo ha entrado por la ventana del salón!\n\nColoca una ficha de {c:QItemMonsterRandomWindow} {MAD20} en el lugar indicado. Si hay algún investigador en el salón recibe 1 de horror.
+EventDoorToHailRoom02Opened03B.button1,Continuar
+EventDogDied.text,No Toby, pobrecillo...ha entregado su vida para proteger a la niña, para protegernos a todos. ¡Y hemos dejado que muera! ¿Qué clase de personas somos?\n\nTodos los investigadores reciben 1 de horror boca arriba.\n\nDescarta la ficha Toby.
+EventDogDied.button1,Continuar
+TokenDog.button2,Toby ha muerto
+EventLobbyShow05A.button1,Continuar
+EventLobbyShow05B.button1,Continuar
+EventCorridor03Door02OpenOrNot.button1,{action} Abrir
+EventCorridor03Door02OpenOrNot.button2,No abrir
+EventCorridor03Door02OpenOrNot.text,Justo cuando vas a abrir las cerraduras tu instinto te detiene. El presagio de algo horrible más allá del umbral de esta puerta.\n\nSientes que tenéis que necesitarás a los otros investigadores a tu lado para hacer frente a lo que te depara más allá.\n\nSolo cuando todos los investigadores estén al alcance del que abra esta puerta, podrás abrirla. Todos los investigadores cruzarán la puerta a la vez.
+EventLobbyShow10B.button1,Continuar
+EventLobbyShow10A.text,Coloca una ficha de Semilla Estelar {MAD20} en el lugar indicado. Por el momento los investigadores no tendrán que esquivarlo ni realizar tiradas de horror contra él.
