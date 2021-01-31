@@ -21,3 +21,5 @@ Ajustado flujo de algunos eventos relacionados con el final del juego.
 Ajuste importante en todos los finales posibles.
 
 Ajuste importante en el comienzo del juego.
+
+Final alternativo: un investigador muere.
