@@ -22,6 +22,8 @@ Ajuste importante en todos los finales posibles.
 
 Ajuste importante en el comienzo del juego.
 
+Final alternativo: un investigador muere.
+
 ### 0.8.1 (2021/02/01)
 
 Cambio de apariciones de "terror" por "horror" cuando se adquieren cartas ya sea boca arriba o boca abajo.
