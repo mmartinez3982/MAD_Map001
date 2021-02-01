@@ -21,3 +21,15 @@ Ajustado flujo de algunos eventos relacionados con el final del juego.
 Ajuste importante en todos los finales posibles.
 
 Ajuste importante en el comienzo del juego.
+
+### 0.8.1 (2021/02/01)
+
+Cambio de apariciones de "terror" por "horror" cuando se adquieren cartas ya sea boca arriba o boca abajo.
+
+Incrementado el indicador de dificultad a 3 estrellas.
+
+Pequeña mejora visual: los textos de pistas ahora aparecen en otro color.
+
+Balanceo de dificultad significativo en base a: dificultad seleccionada, número de investigadores, rondas.
+
+Agregado enlace a github.

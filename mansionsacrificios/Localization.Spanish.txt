@@ -1,4 +1,13 @@
 .,Spanish
+CLUE1,"<color=""cyan"">1 pista {clue}</color>"
+CLUE2,"<color=""cyan"">2 pistas {clue}</color>"
+CLUE3,"<color=""cyan"">3 pistas {clue}</color>"
+HORROR1,1 de Horror
+HORROR2,2 de Horror
+HORROR3,3 de Horror
+HORRORPUTUP1,pon boca arriba 1 carta de horror
+HORRORPUTUP2,pon boca arriba 2 cartas de horror
+HORRORALLPUTUP1,ponen boca arriba 1 carta de horror
 ATTACK,Atacar
 CANCEL,Cancelar
 CONTINUE,Continuar
@@ -26,21 +35,21 @@ TOKENWALLON,Coloca una ficha de <b>pared</b> en el lugar indicado.
 TOKENWALLOFF,Descarta la ficha de <b>pared</b>.
 TOKENWALLSHELVESON,Coloca una ficha de <b>pared con estantería</b> en el lugar indicado.
 TOKENWALLSHELVESOFF,Descarta la ficha de <b>pared con estantería</b>.
-HORRORWINDOWNONE,Recibes <b>1 de horror boca abajo</b>.
-HORRORWINUPONE,Recibes <b>1 de horror boca arriba</b>.
-HORRORDISCDOWNONE,Descarta <b>1 de horror boca arriba</b>.
-HORRORDISCUPONE,Descarta <b>1 de horror boca abajo</b>.
-HORRORALLWINDOWNONE,Todos los investigadores reciben <b>1 de horror boca abajo</b>.
-HORRORALLWINUPONE,Todos los investigadores resiben <b>1 de horror boca arriba</b>.
-HORRORALLDISCDOWNONE,Todos los investigadores descartan <b>1 de horror boca abajo</b>.
-HORRORALLDISCUPONE,Todos los investigadores descartan <b>1 de horror boca arriba</b>.
+HORRORWINDOWNONE,Recibes <b>{qst:HORROR1} boca abajo</b>.
+HORRORWINUPONE,Recibes <b>{qst:HORROR1} boca arriba</b>.
+HORRORDISCDOWNONE,Descarta <b>{qst:HORROR1} boca arriba</b>.
+HORRORDISCUPONE,Descarta <b>{qst:HORROR1} boca abajo</b>.
+HORRORALLWINDOWNONE,Todos los investigadores reciben <b>{qst:HORROR1} boca abajo</b>.
+HORRORALLWINUPONE,Todos los investigadores resiben <b>{qst:HORROR1} boca arriba</b>.
+HORRORALLDISCDOWNONE,Todos los investigadores descartan <b>{qst:HORROR1} boca abajo</b>.
+HORRORALLDISCUPONE,Todos los investigadores descartan <b>{qst:HORROR1} boca arriba</b>.
 TokenSittingRoomMecanism.button1,{qst:RESOLVE}
 EventPuzzleSittingRoomResolved01.button1,{qst:CONTINUE}
 TokenSittingRoomDoor2.text,Esta puerta es posible que lleve al pasillo. Está cerrada.
 TokenSittingRoomDoor2.button1,{qst:OPENWITHKEY}
 quest.authors,Moisés
 quest.authors_short,Moisés
-quest.synopsys,Algo ocurre en la mansión...¿pero el qué?
+quest.synopsys,¿Podréis desentrañar los misterios que esconde esta mansión?
 EventInit03.button1,{qst:CONTINUE}
 EventInit01A.text,Miráis a vuestro alrededor y tardáis unos segundos en ser conscientes de algo: no os acordáis de nada. El dolor de cabeza es insoportable. Os incorporáis y en un esfuerzo por tratar de recordar, lo conseguís vagamente.\n\nSois un grupo de asociados que se dedica a la investigación de gente que ahonda en lo paranormal con fines perversos. Estábais realizando una investigación acerca de una agrupación de fanáticos. Tras un tiempo siguiéndoles la pista llegasteis a pensar que se trataban de meros desequilibrados que no se habían relacionado realmente con nada paranormal, hasta que... Sí, eso es; habíais dado con algo importante y fuisteis a comprobarlo.\n\nAl miraros entre vosotros os percatáis de que todos parecéis igual de confusos y perdidos. ¿Cuánto tiempo lleváis ahí?, ¿y dónde estáis?
 EventInit04.button1,{qst:CONTINUE}
@@ -79,8 +88,8 @@ EventCrows01.button1,{qst:CONTINUE}
 EventMythosRound01.text,La luz que entra por las ventanas...juraríais que a ratos es de día y a ratos de noche. No hay ningún efecto inmediato.
 EventMythosRound01.button1,{qst:CONTINUE}
 EventMythosRound03.button1,{qst:CONTINUE}
-EventMythosRound02.text,"Algo se ha movido y se ha metido bajo el sofá de la esquina, pero ya no está ahí. Al menos de eso está convendido/a {rnd:hero}. Parecía una...serpiente, pero esos ojos rojos y esas fauces...¿qué está pasando?, ¿nos han echado alucinógenos en la bebida? Por otro lado puede ser el estrés y los nervios por estar aquí encerrados; ya te había pasado antes, en alguna otra ocasión.\n\nRealiza una tirada de ({lore}; 3). Si la superas, te acercas al sofá y miras debajo para asegurarte de que es tu mente la que te está jugando una mala pasada; acto seguido vuelves a donde estabas. Si fallas la tirada, sufres 1 de terror; ves nuevamente esa ""serpiente"" moverse por la habitación, entre las sombras. Es...enorme y va a por tí. Sientes la necesidad de salir de la habitación cuanto antes, ¡quieres sobrevivir!"
-EventMythosRound03.text,Una suave melodía suena desde algún lado de la casa, pero parece que solo {rnd:hero} puede oírla. Realiza una tirada de ({will}; 2). Si la superas, te convences de que es solo una imaginación tuya, probablemente ocasionada por los nervios de la situación. Si fallas la tirada, sufres 1 de terror.
+EventMythosRound02.text,"Algo se ha movido y se ha metido bajo el sofá de la esquina, pero ya no está ahí. Al menos de eso está convendido/a {rnd:hero}. Parecía una...serpiente, pero esos ojos rojos y esas fauces...¿qué está pasando?, ¿nos han echado alucinógenos en la bebida? Por otro lado puede ser el estrés y los nervios por estar aquí encerrados; ya te había pasado antes, en alguna otra ocasión.\n\nRealiza una tirada de ({lore}; 3). Si la superas, te acercas al sofá y miras debajo para asegurarte de que es tu mente la que te está jugando una mala pasada; acto seguido vuelves a donde estabas. Si fallas la tirada, sufres {qst:HORROR1}; ves nuevamente esa ""serpiente"" moverse por la habitación, entre las sombras. Es...enorme y va a por tí. Sientes la necesidad de salir de la habitación cuanto antes, ¡quieres sobrevivir!"
+EventMythosRound03.text,Una suave melodía suena desde algún lado de la casa, pero parece que solo {rnd:hero} puede oírla. Realiza una tirada de ({will}; 2). Si la superas, te convences de que es solo una imaginación tuya, probablemente ocasionada por los nervios de la situación. Si fallas la tirada, sufres {qst:HORROR1}.
 EventMythosRound02.button1,{qst:CONTINUE}
 EventOpenWithKey01.text,Abres la puerta utilizando la llave. Decides quedarte con las llaves, seguro que te pueden ser de utilidad más adelante.\n\n{qst:TOKENEXPLOREOFF}
 EventOpenWithKey01.button1,{qst:CONTINUE}
@@ -95,7 +104,7 @@ EventCorridor01TablePapersCheck01.button1,{qst:CONTINUE}
 EventCorridor01TablePapersCheck01.text,Lees lo poco que hay legible. Realiza una tirada de {lore}.
 TokenSittingRoomBoxes.button1,{action} Buscar
 TokenSittingRoomBoxes.text,Unas cajas están amontonadas tras el mostrador. Quizá haya algo de utilidad.
-EventCorridor01TablePapersCheckSuccess.text,Parece tratarse de un registro de eventos, como una especie de diario de acontecimientos que se han estado llevando a cabo durante las últimas semanas, escrito con pluma, sin duda. Casi todo es ilegible debido a manchas de tinta y... ¿sangre? La última anotación corresponde a hoy y es de lo poco que se puede leer:\n- Ya han llegado, por fin podremos culminar nuestros planes.\n\nConsigues {c:QItemCorridor01Notes} {MAD20}. Ganas 1 pista {clue}.\n\n{qst:TOKENSEARCHOFF}
+EventCorridor01TablePapersCheckSuccess.text,Parece tratarse de un registro de eventos, como una especie de diario de acontecimientos que se han estado llevando a cabo durante las últimas semanas, escrito con pluma, sin duda. Casi todo es ilegible debido a manchas de tinta y... ¿sangre? La última anotación corresponde a hoy y es de lo poco que se puede leer:\n- Ya han llegado, por fin podremos culminar nuestros planes.\n\nConsigues {c:QItemCorridor01Notes} {MAD20}. Ganas {qst:CLUE1}.\n\n{qst:TOKENSEARCHOFF}
 EventSittingRoomBoxesSearch.text,Encuentras una {c:QItemSittingRoomBoxesItem} {MAD20}.\n\n{qst:TOKENSEARCHOFF}
 EventSittingRoomBoxesSearch.button1,{qst:CONTINUE}
 TokenSittingRoomNotebook.text,Hay una libreta. Su cubierta parece de algún tipo de piel de animal.
@@ -132,7 +141,7 @@ CustomMonsterCtuluth.info,-
 EventFinalMonsterAppear.button1,{qst:CONTINUE}
 SpawnMonster01A.text,Un tipo con una túnica negra aparece doblando la esquina.\n\n- ¡Han escapado! - grita a la vez que carga hacia vosotros.\n\nColoca una ficha de {c:SpawnMonster01A} {MAD20}.
 SpawnMonster01B.text,Otro tipo con una túnica ensangrentada aparece cerca vuestra.\n\n- No escaparéis de aquí con vida... - susurra mientras lame la sangre de un puñal.\n\nColoca una ficha de {c:SpawnMonster01B} {MAD20}.
-EventCultistDefeated.text,El cultista cae abatido, quedando en el suelo {c:QItemDropMonster01a} {MAD20}. Encontráis, además, un {c:QItemDropMonster01b} {MAD20} colgado de su cuello.\n\nComo acción gratuíta, cualquier investigador que esté en el mismo espacio que el cuerpo del cultista puede coger ahora los objetos.\n\nTodos los investigadores ganan 1 pista {clue}.
+EventCultistDefeated.text,El cultista cae abatido, quedando en el suelo {c:QItemDropMonster01a} {MAD20}. Encontráis, además, un {c:QItemDropMonster01b} {MAD20} colgado de su cuello.\n\nComo acción gratuíta, cualquier investigador que esté en el mismo espacio que el cuerpo del cultista puede coger ahora los objetos.\n\nTodos los investigadores ganan {qst:CLUE1}.
 EventCultistDefeated.button1,{qst:CONTINUE}
 EventBathRoom2Openeda.button1,{qst:CONTINUE}
 EventBathRoom2Openedb.text,Coloca una ficha de {c:QItemBathRoomWoodStick} {MAD20} en el suelo, donde solía estar la puerta.\n\n{qst:TOKENEXPLOREOFF}\n\n{qst:MAYMOVE}
@@ -150,20 +159,20 @@ EventBathRoomMirrorOpen01.text,Abres la cajonera del espejo. Encuentras {c:QItem
 EventBathRoomMirrorOpen03.button2,Ignorar el llanto
 EventBathRoomMirrorOpen02.text,Cuando cierras el espejo, se apaga la luz del baño y se cierra la puerta tras de tí.\n\n{qst:TOKENDARKON}
 EventBathRoomMirrorOpen04.button1,{qst:CONTINUE}
-EventBathRoomMirrorOpen03.text,¡Es otra vez ese llanto! ¡Está ahí contigo, en el baño! Parece que viene de detrás de la cortina de la bañera...\n\nRealiza una tirada de ({will}; 2). Si la superas, mantienes el control y te repites a tí mismo que ahí no hay nada, que es todo imaginación tuya, por la situación tan tensa que estás viviendo. Si fallas la tirada, recibes 1 de horror.\n\nPor último, pon boca arriba 1 carta de horror.
+EventBathRoomMirrorOpen03.text,¡Es otra vez ese llanto! ¡Está ahí contigo, en el baño! Parece que viene de detrás de la cortina de la bañera...\n\nRealiza una tirada de ({will}; 2). Si la superas, mantienes el control y te repites a tí mismo que ahí no hay nada, que es todo imaginación tuya, por la situación tan tensa que estás viviendo. Si fallas la tirada, recibes {qst:HORROR1}.\n\nPor último, {qst:HORRORPUTUP1}.
 EventBathRoomMirrorOpen05.button1,{qst:CONTINUE}
-EventBathRoomMirrorOpen04.text,Corres la cortina a un lado de golpe. Encuentras el cuerpo sin vida de una mujer de unos cuarenta y tantos. Dado el olor y el estado de descomposición, parece llevar muerta varios días.\n\nGanas 1 pista {clue} y 1 de horror. Todo el que esté en el baño también se lleva 1 de horror.
+EventBathRoomMirrorOpen04.text,Corres la cortina a un lado de golpe. Encuentras el cuerpo sin vida de una mujer de unos cuarenta y tantos. Dado el olor y el estado de descomposición, parece llevar muerta varios días.\n\nGanas {qst:CLUE1} y {qst:HORROR1}. Todo el que esté en el baño también se lleva {qst:HORROR1}.
 EventStartRoundBathroomViewed.button1,{qst:CONTINUE}
 SpawnPriestOfDagon.text,Coloca una ficha de {c:SpawnPriestOfDagon}{MAD20} en el lugar indicado.
 TokenLibraryItem02.text,Un libro gastado situado en el sillón. Está cerrado.
 TokenLibraryItem02.button1,{qst:OPEN}
-EventLibraryItem02Open.text,Das un vistazo rápido al libro. Trata sobre rituales acerca de la conexión entre los diferentes planos inexplorados y el nuestro, cuando ciertas condiciones astronómicas se cumplen. Parece más bien un libro de entretenimiento, ¿quién podría tomarse esto en serio?\n\nAunque parece ser que los libros de las estanterías tratan sobre el mismo tema.\n\nPasas algunas páginas para leer un poco más, cuando cae una {c:QItemPhotographicEvidence} {MAD20}.\n\nGanas 2 pistas {clue}.\n\n{qst:TOKENSEARCHOFF}
+EventLibraryItem02Open.text,Das un vistazo rápido al libro. Trata sobre rituales acerca de la conexión entre los diferentes planos inexplorados y el nuestro, cuando ciertas condiciones astronómicas se cumplen. Parece más bien un libro de entretenimiento, ¿quién podría tomarse esto en serio?\n\nAunque parece ser que los libros de las estanterías tratan sobre el mismo tema.\n\nPasas algunas páginas para leer un poco más, cuando cae una {c:QItemPhotographicEvidence} {MAD20}.\n\nGanas {qst:CLUE2}.\n\n{qst:TOKENSEARCHOFF}
 EventLibraryItem02Open.button1,{qst:CONTINUE}
 TokenLibraryItem01.text,Un viejo diario.
 TokenLibraryItem01.button1,{qst:PICKUP}
 EventLibraryItem01B.text,Aquieres {c:QItemOldJournal} {MAD20}. Parece escrito en sangre. Intentas leer algo pero está todo en alguna lengua muerta. Quizá puedas entender algo...
 EventLibraryItem01A.button1,{qst:CONTINUE}
-EventLibraryItem01C.text,"¡Eso es!, se trata de una de las lenguas muertas que alguna vez te ayudó a descifrar un amigo al que llevaste material ""confiscado"". No recuerdas mucho, pero lo suficiente como para saber que se trata de rituales relacionados con la magia más oscura; la relacionada con el sacrificio humano.\n\nGanas 1 pista {clue}.\n\n{qst:TOKENSEARCHOFF}"
+EventLibraryItem01C.text,"¡Eso es!, se trata de una de las lenguas muertas que alguna vez te ayudó a descifrar un amigo al que llevaste material ""confiscado"". No recuerdas mucho, pero lo suficiente como para saber que se trata de rituales relacionados con la magia más oscura; la relacionada con el sacrificio humano.\n\nGanas {qst:CLUE1}.\n\n{qst:TOKENSEARCHOFF}"
 EventLibraryItem01C.button1,{qst:CONTINUE}
 TokenLibraryDoor01.text,Una puerta. Por debajo se aprecia bastante luz. Al otro lado se oye el sonido de algo que se sobrecarga. Quizá una bombilla que esté recibiendo subidas o bajadas de tensión.
 TokenLibraryDoor01.button1,{qst:OPEN}
@@ -186,16 +195,16 @@ TokenLibraryDoor02.button1,{qst:CONTINUE}
 EventLibraryDoor01Opened05.text,Hay una puerta al otro lado de la biblioteca. Se oyen unas voces que provienen del otro lado.
 EventLibraryDoor01Opened05.button1,{qst:CONTINUE}
 EventInit04.text,Sitúa los investigadores repartidos por el salón, por los diferentes asientos disponibles. Puedes utilizar cualquier asiento de todo el salón.\n\nSolo cuando hayas terminado, prosigue.
-EventInit02C.text,{rnd:hero} encuentra en un bolsillo de su chaqueta un {c:QItemRandomLigh01} {MAD20}.\n\nEn cambio...el investigador sentado a su derecha se siente débil y...muy desconcetrando...pierde 1 pista {clue}.
-EventInit01C01.text,La vida siempre os ha sonreído y la suerte os ha acompañado...hasta ahora.\n\nCada investigador comienza con 2 pistas {clue}.
+EventInit02C.text,{rnd:hero} encuentra en un bolsillo de su chaqueta un {c:QItemRandomLigh01} {MAD20}.\n\nEn cambio...el investigador sentado a su derecha se siente débil y...muy desconcetrando...pierde {qst:CLUE1}.
+EventInit01C01.text,La vida siempre os ha sonreído y la suerte os ha acompañado...hasta ahora.\n\nCada investigador comienza con {qst:CLUE2}.
 UIImageInit01.button1,{qst:CONTINUE}
-EventInit02B.text,{rnd:hero} encuentra {c:QItemRandomWeapon01} {MAD20} bajo su abrigo.\n\nAdemás consigue 1 pista {clue} adicional.
+EventInit02B.text,{rnd:hero} encuentra {c:QItemRandomWeapon01} {MAD20} bajo su abrigo.\n\nAdemás consigue {qst:CLUE1} adicional.
 TokenCorridor03Door02.text,Está cerrada. Hay tres cerraduras; una de ellas parece de plata, otra de oro, y la tercera...es muy antigua. Quizá puedas encontrar las llaves investigando el resto de la mansión.
 TokenCorridor03Door02.button1,{qst:OPEN}
 EventBathRoomMirrorOpen00.button1,{qst:CONTINUE}
-EventBathRoomMirrorOpen05.text,Decides ignorar el llanto de la mujer de detrás de la cortina. Pero cada vez la sientes más cerca...Ya no proviene de detrás de la cortina, ahora está tras de tí, te gires hacia donde te gires, siempre está ahí, en la más absoluta oscuridad, cada vez más próxima. Notas un aliento helado que te recorre la nuca suavemente, erizándote cada uno de los pelos de tu cuerpo.\n\nTú y todo el que esté en el aseo recibe 2 de terror y ponen boca arriba 1 de terror.
-EventBathRoomMirrorOpen00.text,Conforme te acercas al espejo, algo resquebraja tu mente. A cada paso que das notas el cuerpo cada vez más y más pesado, susurros surgen de cada rincón del baño; susurros de seres que no habitan este mundo.\n\nTe plantas frente al espejo y ves el reflejo del fracaso. Sufres 2 de terror anulados con ({will}; 2). Luego pon boca arriba 1 carta de terror.
-EventLibraryItem01A.text,Desde el momento que pones tus manos en el diario, algo te mantiene completamente embelesado; un poder extraño...\n\nInconscientemente, vas pasando páginas del diario, murmullando cánticos en una lengua muerta. Al poco, vuelves en tí y te das cuenta de que te has hecho sangre en la palma de la mano y has comenzado a escribir algo en el diario, todavía ilegible.\n\nTodo investigador que esté al alcance recibe 2 de terror.\n\nLuego pon boca arriba una carta de terror.
+EventBathRoomMirrorOpen05.text,Decides ignorar el llanto de la mujer de detrás de la cortina. Pero cada vez la sientes más cerca...Ya no proviene de detrás de la cortina, ahora está tras de tí, te gires hacia donde te gires, siempre está ahí, en la más absoluta oscuridad, cada vez más próxima. Notas un aliento helado que te recorre la nuca suavemente, erizándote cada uno de los pelos de tu cuerpo.\n\nTú y todo el que esté en el aseo recibe {qst:HORROR2} y ponen boca arriba {qst:HORROR1}.
+EventBathRoomMirrorOpen00.text,Conforme te acercas al espejo, algo resquebraja tu mente. A cada paso que das notas el cuerpo cada vez más y más pesado, susurros surgen de cada rincón del baño; susurros de seres que no habitan este mundo.\n\nTe plantas frente al espejo y ves el reflejo del fracaso. Sufres {qst:HORROR2} anulados con ({will}; 2). Luego {qst:HORRORPUTUP1}.
+EventLibraryItem01A.text,Desde el momento que pones tus manos en el diario, algo te mantiene completamente embelesado; un poder extraño...\n\nInconscientemente, vas pasando páginas del diario, murmullando cánticos en una lengua muerta. Al poco, vuelves en tí y te das cuenta de que te has hecho sangre en la palma de la mano y has comenzado a escribir algo en el diario, todavía ilegible.\n\nTodo investigador que esté al alcance recibe {qst:HORROR2}.\n\nLuego {qst:HORRORPUTUP1}.
 EventBathRoomMirrorOpen02.button1,{qst:CONTINUE}
 UIBathRoomMirrorOpen.button1,{qst:CONTINUE}
 EventLibraryItem01B.button1,{lore} Descifrar
@@ -218,39 +227,39 @@ TokenCultistOffice.text,Parece inconsciente.
 SpawnCultistOffice.button1,{qst:CONTINUE}
 EventMonster02Appeared.button1,{qst:CONTINUE}
 EventMonster02Appeared.text,La criatura te observa, olfatea el aire y mira tras de tí al tiempo que parece casi sonreír.
-SpawnMonster03.text,Sin apenas hacer ruido, ves cómo una criatura similar a la que ha aparecido en la oficina repta por el techo sin dejar de mirarte, hasta situarte encima tuyo y proferir un rugido estremecedor. Puedes incluso notar cómo su saliva, pegajosa y maloliente, cae sobre tí.\n\nLa situación te supera. Sufres 2 de horror anulados por {will}+1. Si estás solo en el pasillo, sin ningún otro investigador al alcance que te pueda aportar algo de calma y seguridad, recibe 1 más de horror, esta vez boca arriba.\n\nColoca una ficha de monstruo en el lugar indicado.
+SpawnMonster03.text,Sin apenas hacer ruido, ves cómo una criatura similar a la que ha aparecido en la oficina repta por el techo sin dejar de mirarte, hasta situarte encima tuyo y proferir un rugido estremecedor. Puedes incluso notar cómo su saliva, pegajosa y maloliente, cae sobre tí.\n\nLa situación te supera. Sufres {qst:HORROR2} anulados por {will}+1. Si estás solo en el pasillo, sin ningún otro investigador al alcance que te pueda aportar algo de calma y seguridad, recibe {qst:HORROR1} más, esta vez boca arriba.\n\nColoca una ficha de monstruo en el lugar indicado.
 SpawnMonster03.button1,{qst:CONTINUE}
 SpawnCultistOffice.text,Atacas a {c:SpawnCultistOffice} {MAD20}, lo que lo espabila.\n\nA partir de ahora sí hay que realizar tiradas de horror y evasión contra él.
 EventCultistOfficeAppear.button1,{qst:CONTINUE}
 EventCultistOfficeAppear.text,Acto seguido se desploma y aparece frente a tí y aparece un {c:SpawnMonster02} {MAD20}.\n\nColoca su ficha en el lugar indicado.
 EventCorridor02ViewMoreShow06.text,{qst:MAYMOVE}
 EventCorridor02ViewMoreShow05.button1,{qst:CONTINUE}
-quest.name,La mansión de los sacrificios (v0.8)
+quest.name,La mansión de los sacrificios (v0.8.1)
 EventInit01A.button1,{qst:CONTINUE}
 EventInit01B.text,No recordáis mucho acerca de vuestro pasado más inmediato, pero sí sabéis cómo ha sido siempre vuestro camino...
 EventInit01B.button2,Todo lo que habéis conseguido, lo habéis luchado
 EventInit01B.button1,Siempre habéis tenido ayuda
 EventInit01C01.button1,{qst:CONTINUE}
-EventInit01C02.text,Con el esfuerzo y el trabajo duro habéis conseguido llegar alto.\n\nCada investigador comienza con 1 pista {clue}.
+EventInit01C02.text,Con el esfuerzo y el trabajo duro habéis conseguido llegar alto.\n\nCada investigador comienza con {qst:CLUE1}.
 EventInit01C02.button1,{qst:CONTINUE}
 EventInit01B.button3,Vivir es una constante lucha
-EventInit01C03.text,Cada paso que habéis dado ha sido tras superar cantidad de dificultades. Lo que estáis viviendo ahora no es sino otra más de tantas calamidades que rigen vuestro día a día.\n\nCada investigador comienza con 1 pista {clue}.
+EventInit01C03.text,"Cada paso que habéis dado ha sido tras superar cantidad de dificultades. Lo que estáis viviendo ahora no es sino otra más de tantas calamidades que rigen vuestro día a día.\n\nCada investigador comienza con <color=""cyan"">{qst:CLUE1}</color>."
 EventInit01C03.button1,{qst:CONTINUE}
 EventInit02A.button1,{qst:CONTINUE}
 EventInit02B.button1,{qst:CONTINUE}
-EventInit02A.text,{rnd:hero} encuentra {c:QItemRandomFireWeapon01} {MAD20} bajo su abrigo.\n\nAdemás consigue 1 pista adicional {clue}.
+EventInit02A.text,{rnd:hero} encuentra {c:QItemRandomFireWeapon01} {MAD20} bajo su abrigo.\n\nAdemás consigue {qst:CLUE1} adicional.
 EventInit02C.button1,{qst:CONTINUE}
 SpawnMonster01A.button1,{qst:CONTINUE}
 SpawnMonster01B.button1,{qst:CONTINUE}
 SpawnWindowMaxDifficulty.button1,{qst:CONTINUE}
 EventDoorToHailRoom02Opened03B.text,Aunque el perro irá todo el rato junto a la niña, que lleváis a vuestro lado, la ficha se quedará aquí visible para que podáis interactuar con el perro e indicar si ha sido o no derrotado.
-SpawnMonsterRandomWindow.text,¡Algo ha entrado por la ventana del salón!\n\nColoca una ficha de {c:SpawnMonsterRandomWindow} en el lugar indicado.\n\nSi hay algún investigador en el salón recibe 1 de horror.
+SpawnMonsterRandomWindow.text,¡Algo ha entrado por la ventana del salón!\n\nColoca una ficha de {c:SpawnMonsterRandomWindow} en el lugar indicado.\n\nSi hay algún investigador en el salón recibe {qst:HORROR1}.
 SpawnMonsterRandomWindow.button1,{qst:CONTINUE}
 SpawnMonster03B.button1,{qst:CONTINUE}
-SpawnMonster03B.text,Cuando consigues quitar la mirada del {c:SpawnMonster03} {MAD20}, algo atrae tu atención. Una figura se alza rígida, tranquila, tras una mesa que hay en el pasillo. Con la mirada del más fiero cazador, la figura se agazapa, preparada para atacar.\n\nColoca una ficha de {c:SpawnMonster03B}{MAD20} en el lugar indicado.\n\nTodo investigador que esté presenciando la escena sufre 1 de horror debido a lo inaudito de la situación; vais a morir, es un hecho.
+SpawnMonster03B.text,Cuando consigues quitar la mirada del {c:SpawnMonster03} {MAD20}, algo atrae tu atención. Una figura se alza rígida, tranquila, tras una mesa que hay en el pasillo. Con la mirada del más fiero cazador, la figura se agazapa, preparada para atacar.\n\nColoca una ficha de {c:SpawnMonster03B}{MAD20} en el lugar indicado.\n\nTodo investigador que esté presenciando la escena sufre {qst:HORROR1} debido a lo inaudito de la situación; vais a morir, es un hecho.
 TokenCorridor03DoorFront.text,Está bloqueada, no parece que podáis abrirla. Ruidos extraños provienen del otro lado.
 TokenCorridor03DoorFront.button1,{qst:CONTINUE}
-SpawnMonster05.text,La puerta del final del pasillo se abre y una criatura cruza su umbral, con la boca ensangrentada. Esta estudia el entorno, en busca de su próxima presa.\n\nLa criatura fija su mirada en el investigador que más cerca esté, dentro su alcance. Este sufre 2 de horror anulados por {will} +1. Si no hay ningún investigador al alcance de la criatura, esta avanza un espacio hacia el investigador más cercano y profiere un ensordecedor chirrido. Todo investigador al alcance de la criatura sufre 1 de horror. Luego colocan 1 ficha de horror boca arriba.
+SpawnMonster05.text,La puerta del final del pasillo se abre y una criatura cruza su umbral, con la boca ensangrentada. Esta estudia el entorno, en busca de su próxima presa.\n\nLa criatura fija su mirada en el investigador que más cerca esté, dentro su alcance. Este sufre {qst:HORROR2} anulados por {will} +1. Si no hay ningún investigador al alcance de la criatura, esta avanza un espacio hacia el investigador más cercano y profiere un ensordecedor chirrido. Todo investigador al alcance de la criatura sufre {qst:HORROR1}. Luego {qst:HORRORALLPUTUP1}.
 SpawnMonster05.button1,{qst:CONTINUE}
 SpawnMonster04.text,Unos pasos se oyen desde el final del pasillo.\n\nColoca una ficha de {c:SpawnMonster04}{MAD20} en el lugar indicado.
 SpawnMonster04.button1,{qst:CONTINUE}
@@ -288,7 +297,7 @@ TokenDog.text,- ¡Boof, boof!
 TokenDog.button1,{action} Acariciar
 EventDogStrokedFirstTime.button1,{qst:CONTINUE}
 EventDogStroked.text,El perro mueve el rabo como muestra de agrado. Luego la aparta suavemente con el hocico y te mira a tí y luego a la niña, como intentando comunicarte que no es momento de hacer monerías y que hay que salir de aquí y poner a la niña a salvo.
-EventDogStrokedFirstTime.text,El perro mueve el rabo como muestra de su alegría y hace alguna monería. Os reconforta la compañía de un ser tan fiel como este en un momento tan difícil... Todo el que esté al alcance del perro descarta todo el horror boca arriba. Si no tienes ningún horror boca arriba, descarta 1 de horror.
+EventDogStrokedFirstTime.text,El perro mueve el rabo como muestra de su alegría y hace alguna monería. Os reconforta la compañía de un ser tan fiel como este en un momento tan difícil... Todo el que esté al alcance del perro descarta todo el horror boca arriba. Si no tienes ningún horror boca arriba, descarta {qst:HORROR1}.
 EventDogStroked.button1,{qst:CONTINUE}
 EventDoorToHailRoom02Opened01.button1,{qst:CONTINUE}
 EventDoorToHailRoom02Opened04.text,Junto a la puerta hay un armario.\n\n{qst:TOKENSEARCHON}
@@ -302,15 +311,15 @@ EventDoorToHailRoom02Opened03.button1,Claro cariño, ven conmigo, yo te proteger
 EventDoorToHailRoom02Opened04.button1,{qst:CONTINUE}
 EventDoorToHailRoom02Opened03A.button1,{qst:CONTINUE}
 EventDoorToHailRoom02Opened03.button2,No, solo estoy buscando una llave.
-EventDoorToHailRoom02Opened03A.text,La niña sonríe y parece más tranquila. Baja el arma y se dispone a seguirte. Te agarra de la ropa con una mano; parece sentirse más protegida. El perro no se separa de ella.\n\nA partir de ahora la niña y el perro te seguirán allá donde vayas. Como acción de intercambio la niña podrá cambiar el investigador con el que va, pero el perro siempre irá junto a la niña.\n\{qst:HORRORDISCUPONE}. Si no tienes ninguna, descarta 1 carta de horror boca abajo.\n\nEstá claro que no tenían nada bueno pensado para esta niña. Seguramente tenían pensado ofrecerla en sacrificio a alguna deidad...mejor ni pensarlo.\n\nGanas 2 pistas {clue}.\n\nSi hay algún monstruo al alcance del perro, este ataca. Su ataque se considera Arma de Filo. Los atributos del perro son:\n3 {strength}\n4 {agility}\n1 {lore}\n2 {influence}\n5 {observation}\n\nDe igual manera, el perro puede ser receptor de ataques. Tiene 5 puntos de vida y 4 de horror. En cada ronda se repetirán los atributos del perro. No obstante, es recomendable apuntarlos para cuando realice u reciba un ataque. Si el perro es derrotado en algún momento, todos los investigadores reciben 1 de horror boca arriba. Además, lo llevarán con ellos para sacarlo de ese lugar. Esto no supondrá penalización alguna para el que lo cargue.
+EventDoorToHailRoom02Opened03A.text,La niña sonríe y parece más tranquila. Baja el arma y se dispone a seguirte. Te agarra de la ropa con una mano; parece sentirse más protegida. El perro no se separa de ella.\n\nA partir de ahora la niña y el perro te seguirán allá donde vayas. Como acción de intercambio la niña podrá cambiar el investigador con el que va, pero el perro siempre irá junto a la niña.\n\{qst:HORRORDISCUPONE}. Si no tienes ninguna, descarta 1 carta de horror boca abajo.\n\nEstá claro que no tenían nada bueno pensado para esta niña. Seguramente tenían pensado ofrecerla en sacrificio a alguna deidad...mejor ni pensarlo.\n\nGanas {qst:CLUE2}.\n\nSi hay algún monstruo al alcance del perro, este ataca. Su ataque se considera Arma de Filo. Los atributos del perro son:\n3 {strength}\n4 {agility}\n1 {lore}\n2 {influence}\n5 {observation}\n\nDe igual manera, el perro puede ser receptor de ataques. Tiene 5 puntos de vida y 4 de horror. En cada ronda se repetirán los atributos del perro. No obstante, es recomendable apuntarlos para cuando realice u reciba un ataque. Si el perro es derrotado en algún momento, todos los investigadores reciben {qst:HORROR1} boca arriba. Además, lo llevarán con ellos para sacarlo de ese lugar. Esto no supondrá penalización alguna para el que lo cargue.
 EventDoorToHailRoom02Opened03B01.button1,{qst:CONTINUE}
-EventDoorToHailRoom02Opened03B03.text,Se te hiela la sangre al escuchar un gruñido, seguido de ladridos y gritos de horror de la niña...\n\n¿Qué has hecho? Has sentenciado a esa pobre criatura a una muerte segura.\n\nTus remordimientos pueden contigo. Sufres 3 de horror anulados por {will} -1. Luego pon boca arriba 2 cartas de horror.
+EventDoorToHailRoom02Opened03B03.text,Se te hiela la sangre al escuchar un gruñido, seguido de ladridos y gritos de terror de la niña...\n\n¿Qué has hecho? Has sentenciado a esa pobre criatura a una muerte segura.\n\nTus remordimientos pueden contigo. Sufres {qst:HORROR3} anulados por {will} -1. Luego {qst:HORRORPUTUP2}.
 EventDoorToHailRoom02Opened03B02.button1,{qst:CONTINUE}
 EventDoorToHailRoom02Opened03B01.text,El rostro de la niña se llena de tristeza. Acaba de ver cómo su última esperanzas se desvanecía. El perro, preocupado, intenta animarla sin éxito.
 EventDoorToHailRoom02Opened03B02.text,- ¡No os necesitamos! Vamos Toby, salgamos de aquí.\n\nLa niña te aparta y se marcha lámpara en mano por donde has venido.
 EventDogAttack.button1,{qst:CONTINUE}
 EventDoorToHailRoom02Opened03B03.button1,{qst:CONTINUE}
-EventDogAttack.text,Si hay algún monstruo al alcance del perro, este ataca. Su ataque se considera Arma de Filo. Los atributos del perro son:\n3 {strength}\n4 {agility}\n1 {lore}\n2 {influence}\n5 {observation}\n\nDe igual manera, el perro puede ser receptor de ataques. Tiene 4 puntos de vida y 3 de horror. Es recomendable apuntarlos para cuando realice u reciba un ataque. Si el perro es derrotado en algún momento, todos los investigadores a su alcance reciben 1 de horror y lo llevarán con ellos para sacarlo de ese lugar.\n
+EventDogAttack.text,Si hay algún monstruo al alcance del perro, este ataca. Su ataque se considera Arma de Filo. Los atributos del perro son:\n3 {strength}\n4 {agility}\n1 {lore}\n2 {influence}\n5 {observation}\n\nDe igual manera, el perro puede ser receptor de ataques. Tiene 4 puntos de vida y {qst:HORROR3}. Es recomendable apuntarlos para cuando realice u reciba un ataque. Si el perro es derrotado en algún momento, todos los investigadores a su alcance reciben {qst:HORROR1} y lo llevarán con ellos para sacarlo de ese lugar.\n
 TokenWardrobe01.text,Un armario.
 TokenWardrobe01.button1,{qst:OPEN}
 EventWardrobe01OpenedDifficulty01.text,Encuentras un {c:QItemFireWeapon01}{MAD20}.\n\n{qst:TOKENSEARCHOFF}
@@ -380,7 +389,7 @@ PuzzleSittingRoom.button1,Resolver
 EventPuzzleSittingRoomResolved02.text,¿Qué es todo esto, y qué hace aquí?
 EventPuzzleSittingRoomResolved03.text,Encuentras {c:QItemUniqueMissingLink}{MAD20}.
 EventPuzzleSittingRoomResolved04.text,Encuentras {c:QItemUniqueGrotesqueStone}{MAD20}.
-EventPuzzleSittingRoomResolved05.text,¿De qué va todo esto? Todos los libros del estante hablan de seres de otro mundo y la conexión con el nuestro.\n\nParece que habéis caído en manos de fanáticos. Pero, ¿acaso veníais aquí siguiendo alguna pista y os pillaron? Y si es así...¿por qué seguís con vida? Este tipo de gente no suele dejar a nadie vivo. A no ser que...\n\nGanas 2 pistas {clue}. Si lo prefieres, en su lugar comparte lo que has encontrado y tus deducciones con los demás investigadores. Todos los investigadores al alcance ganan 1 pista {clue}.
+EventPuzzleSittingRoomResolved05.text,¿De qué va todo esto? Todos los libros del estante hablan de seres de otro mundo y la conexión con el nuestro.\n\nParece que habéis caído en manos de fanáticos. Pero, ¿acaso veníais aquí siguiendo alguna pista y os pillaron? Y si es así...¿por qué seguís con vida? Este tipo de gente no suele dejar a nadie vivo. A no ser que...\n\nGanas {qst:CLUE2}. Si lo prefieres, en su lugar comparte lo que has encontrado y tus deducciones con los demás investigadores. Todos los investigadores al alcance ganan {qst:CLUE1}.
 EventPuzzleSittingRoomResolved04.button1,{qst:CONTINUE}
 EventPuzzleSittingRoomResolved05.button1,{qst:CONTINUE}
 EventSittingRoomMecanismShow01.text,Véis una estantería al final del salón.\n\nColoca una ficha de <b>pared con estantería</b> en el lugar indicado.
@@ -397,18 +406,18 @@ EventLobbyShow04.text,- Llegáis justo a tiempo. Sabía que podía confiar en vu
 EventLobbyShow04.button1,{qst:CONTINUE}
 EventLobbyShow05A.text,Cuando intentáis evitarlo os dáis cuenta de que no podéis moveros. Toby gruñe e intenta moverse, pero se  encuentra en la misma situación que vosotros.\n\n- El cuerpo de un animal fiel - dice mientras coge al perro y lo arroja al portal. Justo antes de desaparecer en el portal se escucha al pobre animal proferir chillidos de terror y frustración. Una sonrisa maléfica se dibuja en el rostro del tipo.
 EventLobbyShow06.button1,{qst:CONTINUE}
-EventLobbyShow05B.text,Cuando intentáis evitarlo os dáis cuenta de que no podéis moveros.\n\n- Miráos, ni siquiera habéis sido capaces de salvar al perro; patético.\n\nTodos los investigadores reciben 1 de horror.\n\n- En fin, ¿por dónde iba? Ah sí, el cuerpo de un animal fiel - dice mientras coge al perro y lo arroja al portal. Veis el cuerpo del pobre animal desaparecer en el portal. Poco después escucháis unos sonidos de algo que estáis seguros que no es de este mundo. ¿De verdad está pasando todo esto?, ¿es real?.\n\nOs dáis cuenta de que el tipo observa vuestra reacción de tristeza con un placer macabro. Una sonrisa maléfica se dibuja en su rostro.
-EventLobbyShow07A.text,Había confiado en vosotros, creía firmemente que la salvaríais y la pobre ha muerto de una manera horrible. ¡Y no habéis podido hacer nada!\n\nTodos los investigadores reciben 1 de horror anulado por {will} -1.
+EventLobbyShow05B.text,Cuando intentáis evitarlo os dáis cuenta de que no podéis moveros.\n\n- Miráos, ni siquiera habéis sido capaces de salvar al perro; patético.\n\nTodos los investigadores reciben {qst:HORROR1}.\n\n- En fin, ¿por dónde iba? Ah sí, el cuerpo de un animal fiel - dice mientras coge al perro y lo arroja al portal. Veis el cuerpo del pobre animal desaparecer en el portal. Poco después escucháis unos sonidos de algo que estáis seguros que no es de este mundo. ¿De verdad está pasando todo esto?, ¿es real?.\n\nOs dáis cuenta de que el tipo observa vuestra reacción de tristeza con un placer macabro. Una sonrisa maléfica se dibuja en su rostro.
+EventLobbyShow07A.text,Había confiado en vosotros, creía firmemente que la salvaríais y la pobre ha muerto de una manera horrible. ¡Y no habéis podido hacer nada!\n\nTodos los investigadores reciben {qst:HORROR1} anulado por {will} -1.
 EventLobbyShow06.text,- La sangre de una virgen inocente como ofrenda para el todopoderoso - pronuncia al tiempo que coloca a la niña en un altar y comienza a rajar su cuello con un puñal. La niña os mira, con el rostro lleno de lágrimas y gorgoteando sangre, ahogándose.\n\nCuando finalmente la niña deja de respirar, cierra los ojos y su cuerpo se relaja. Ya descansa...pobre criatura.
 EventLobbyShow07A.button1,{qst:CONTINUE}
-EventLobbyShow07B.text,Teníais que haberla ayudado, ¿en qué estábais pensando para no ayudar a una probre chiquilla en apuros?, ¿qué otro destino esperaba a una niña en un sitio como este?\n\nTodos los investigadores reciben 2 de horror boca arriba anulado por {will} -2.
+EventLobbyShow07B.text,Teníais que haberla ayudado, ¿en qué estábais pensando para no ayudar a una probre chiquilla en apuros?, ¿qué otro destino esperaba a una niña en un sitio como este?\n\nTodos los investigadores reciben {qst:HORROR2} boca arriba anulado por {will} -2.
 EventLobbyShow07B.button1,{qst:CONTINUE}
 EventLobbyShow08.text,El tipo se gira hacia vosotros:\n- Y la sangre de aquellos que pretenden impedir su llegada a este mundo.\n\nLame la hoja de la daga, aún cubierta de la sangre de la niña y se acerca a vosotros. Os hace un corte a cada uno con la daga y arroja la sangre al portal.\n\nTodos los investigadores reciben 1 de daño.\n\nCuando vuestra sangre entra en el vórtice, sentís que ya podéis moveros con libertad. Ha llegado la hora de la venganza, de hacer pagar a esta escoria por todo el daño que han hecho para llegar hasta donde han llegado.
 EventLobbyShow08.button1,{qst:CONTINUE}
 EventLobbyShow09.text,Los demás sectarios siguen pronunciando las palabras del ritual. Algo comienza a aparecer a través del portal...
 EventLobbyShow09.button1,{qst:CONTINUE}
 EventLobbyShow10A.button1,{qst:CONTINUE}
-EventLobbyShow10B.text,Coloca una ficha de Semilla Estelar {MAD20} en el lugar indicado. Por el momento los investigadores no tendrán que esquivarlo ni realizar tiradas de horror contra él. Pero lo que está atravesando el portal es tan aterrador...\n\nTodos los investigadores reciben 1 de horror anulado por {will} - 1.
+EventLobbyShow10B.text,Coloca una ficha de Semilla Estelar {MAD20} en el lugar indicado. Por el momento los investigadores no tendrán que esquivarlo ni realizar tiradas de horror contra él. Pero lo que está atravesando el portal es tan aterrador...\n\nTodos los investigadores reciben {qst:HORROR1} anulado por {will} - 1.
 EventLobbyShow11.text,Todos los investigadores pueden actuar como si de un nuevo turno se tratara, incluso aquellos que ya hayan actuado.\n\nQuizá podáis detener esta locura acabando con el líder antes de que esa criatura atraviese el portal. No dejéis que este {c:SpawnPriestOfDagon}{MAD20} se salga con la suya; ¡acabad con su vida antes de que sea demasiado tarde!
 EventLobbyShow11.button1,{qst:CONTINUE}
 EventLobbyShow12.text,A vuestro lado véis una puerta atrancada con tablones.
@@ -444,7 +453,7 @@ EventStartRoundBathroomViewed.text,Unos golpes provienen de la habitación que h
 SpawnPriestOfDagon.button1,{qst:CONTINUE}
 EventEndGood02A.button1,{qst:CONTINUE}
 EventEndGood02A.text,La criatura se tambalea...¿realmente habéis acabado con ella? La mansión comienza a tambalearse; un terremoto parece haberse iniciado.\nLos Sectarios os miran, atónitos ante la caída de lo que creían su nuevo dios. Su incredulidad y los temblores cada vez mayores los hace incapaces de controlar el portal. Un fuerte viento arrastra todo lo que hay en la habitación hacia el portal. Por los pelos conseguís sujetaros donde podéis; los Sectarios no han corrido con la misma suerte, todos son absorvidos por el portal, donde una figura más grande si cabe que la que acabáis de derrotar los recibe como se merecen, con una muerte lenta llena de horrores inimaginables...
-quest.description,Una amnesia repentina y el hecho de que despertáis en una mansión desconocida sientan las bases de esta historia. ¿Podréis desentrañar los misterios que esconde esta mansión?
+quest.description,Una amnesia repentina y el hecho de que despertáis en una mansión desconocida sientan las bases de esta historia. ¿Podréis desentrañar los misterios que esconde esta mansión?\n\nComo buen investigador siempre tienes a mano una libreta y algo para tomar apuntes.\n\nLa historia comienza...\n\nGracias por jugar el escenario. Tambiéna agradezco cualquier comentario, sugerencia o crítica constructiva que aportes en el formulario final o issue creado aquí:\n\n<i>https://github.com/mmartinez3982/MAD_Map001</i>
 TokenLobbyCultist05.text,No parece relevante centraros en él.
 TokenLobbyCultist05.button1,{qst:CONTINUE}
 TokenLobbyCultist04.text,Una mujer cultista. Su mirada...parece perdida.
@@ -472,9 +481,9 @@ EventCorridor02ViewMore06.button1,{qst:CONTINUE}
 EventPianoRoomDoorOpened04.text,{qst:TOKENEXPLOREOFF}\n\n{qst:MAYMOVE}
 EventCorridor02ViewMore06.text,{qst:TOKENLOOKOFF}
 EventPianoRoomDoorOpened04.button1,{qst:CONTINUE}
-SpawnWindowMaxDifficulty.text,¡Algo ha entrado por la ventana del salón!\n\nColoca una ficha de {c:QItemMonsterRandomWindow} {MAD20} en el lugar indicado. Si hay algún investigador en el salón recibe 1 de horror.
+SpawnWindowMaxDifficulty.text,¡Algo ha entrado por la ventana del salón!\n\nColoca una ficha de {c:QItemMonsterRandomWindow} {MAD20} en el lugar indicado. Si hay algún investigador en el salón recibe {qst:HORROR1}.
 EventDoorToHailRoom02Opened03B.button1,{qst:CONTINUE}
-EventDogDied.text,No Toby, pobrecillo...ha entregado su vida para proteger a la niña, para protegernos a todos. ¡Y hemos dejado que muera! ¿Qué clase de personas somos?\n\nTodos los investigadores reciben 1 de horror boca arriba.\n\nDescarta la ficha Toby.
+EventDogDied.text,No Toby, pobrecillo...ha entregado su vida para proteger a la niña, para protegernos a todos. ¡Y hemos dejado que muera! ¿Qué clase de personas somos?\n\nTodos los investigadores reciben {qst:HORROR1} boca arriba.\n\nDescarta la ficha Toby.
 EventDogDied.button1,{qst:CONTINUE}
 TokenDog.button2,Toby ha muerto
 EventLobbyShow05A.button1,{qst:CONTINUE}
