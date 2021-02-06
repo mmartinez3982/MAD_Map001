@@ -14,8 +14,8 @@ My very first Madness Mansions scenario for [Valkyrie](https://github.com/NPBruc
 
 ### To-do list (no special order)
 
-* Explain which is exactly the number and type of damage the dog deals.
-* Translate scenario into English language.
+* ~~Explain which is exactly the number and type of damage the dog deals.~~ (v0.8.2)
+* ~~Translate scenario into English language.~~ (v0.8.2)
 * Include tiles names.
 * Rework initial static mythos (at least the first of all of them): difficulty and description.
 * Include at least one light source.
@@ -64,6 +64,8 @@ Added github link.
 
 Scenario translated into English.
 
+Explain which is exactly the number and type of damage the dog deals
+
 
 ## Español
 
@@ -73,8 +75,8 @@ Mi primer escenario del juego de Mansiones de la Locura para [Valkyrie](https://
 
 ### Lista de tareas (sin ningún orden)
 
-* Explicar cuáles son exactamente el número y tipo de daño que hace el perro.
-* Traducir el escenario al inglés.
+* ~~Explicar cuáles son exactamente el número y tipo de daño que hace el perro.~~ (v0.8.2)
+* ~~Traducir el escenario al inglés.~~ (v0.8.2)
 * Incluir el nombre de las losetas (tiles).
 * Rehacer los mythos iniciales (al menos el primero de todos): dificultad y descripción
 * Incluir al menos una fuente de luz.
@@ -122,3 +124,5 @@ Agregado enlace a github.
 #### 0.8.2 (2021/02/06)
 
 Escenario traducido al inglés.
+
+Explicar cuáles son exactamente el número y tipo de daño que hace el perro.
