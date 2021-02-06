@@ -40,7 +40,7 @@ HORRORWINUPONE,Recibes <b>{qst:HORROR1} boca arriba</b>.
 HORRORDISCDOWNONE,Descarta <b>{qst:HORROR1} boca arriba</b>.
 HORRORDISCUPONE,Descarta <b>{qst:HORROR1} boca abajo</b>.
 HORRORALLWINDOWNONE,Todos los investigadores reciben <b>{qst:HORROR1} boca abajo</b>.
-HORRORALLWINUPONE,Todos los investigadores resiben <b>{qst:HORROR1} boca arriba</b>.
+HORRORALLWINUPONE,Todos los investigadores reciben <b>{qst:HORROR1} boca arriba</b>.
 HORRORALLDISCDOWNONE,Todos los investigadores descartan <b>{qst:HORROR1} boca abajo</b>.
 HORRORALLDISCUPONE,Todos los investigadores descartan <b>{qst:HORROR1} boca arriba</b>.
 TokenSittingRoomMecanism.button1,{qst:RESOLVE}
@@ -58,7 +58,7 @@ EventSittingRoomDoor2Show.text,Hay una puerta a un lado de salón.\n\n{qst:TOKEN
 EventSittingRoomDoor2Show.button1,{qst:CONTINUE}
 EventSittingRoomMecanismShow02.text,En la estantería veis una serie de libros, documentos y objetos algo extraños y muy antiguos.\n\nColoca una ficha de <b>Interacción</b> en el lugar indicado.
 EventSittingRoomMecanismShow02.button1,{qst:CONTINUE}
-EventSittingRoomDoor2Broken.text,Cuando golpeas la puerta con el hombro, esta cede y consigues desencajar la madera las visagras.\n \n Sitúa la ficha {MAD20} como se indica. Puedes moverte a la habitación que estás explorando, si quieres.\n\n{qst:TOKENEXPLOREOFF}
+EventSittingRoomDoor2Broken.text,Cuando golpeas la puerta con el hombro, esta cede y consigues desencajar la madera las visagras.\n \n Sitúa la ficha {MAD20} como se indica. {qst:MAYMOVE} \n\n{qst:TOKENEXPLOREOFF}
 EventSittingRoomDoor2Broken.button1,{qst:CONTINUE}
 TokenSittingRoomDoor2Key.text,Una llave. No tiene ningún grabado, con lo que desconoces su uso.
 TokenSittingRoomDoor2Key.button1,{qst:PICKUP}
@@ -68,7 +68,7 @@ EventShowCorridor01.text,Un largo pasillo lleno de cuadros...no hay duda, estái
 EventSittingRoomDoor2Opened.text,La puerta deja paso a un largo pasillo.
 EventShowCorridor01.button1,{qst:CONTINUE}
 EventWomanCrying1.button1,{qst:CONTINUE}
-EventCorridor01ShowMore.text,Cuando un investigador esté cerca, podrá ver qué hay más allá. ¿Estará la mujer en el pasillo o más allá?\n\n{qst:TOKENLOOKON}
+EventCorridor01ShowMore.text,Cuando un investigador esté cerca, podrá ver qué hay más allá. ¿Estará la mujer en el pasillo?\n\n{qst:TOKENLOOKON}
 EventWomanCrying1.text,Lo que parece ser el llanto de una mujer procede de más allá de donde alcanza la vista. Habría que comprobar si se encuentra bien. Quizá os ayude a saber dónde estáis y el motivo por el que estáis aquí. Pero,... ¿qué era ese otro ruido que se ha oído?
 EventCorridor02Table.button1,{qst:CONTINUE}
 TokenCorridor01ViewMore.text,¿Echas un vistazo?
@@ -88,7 +88,7 @@ EventCrows01.button1,{qst:CONTINUE}
 EventMythosRound01.text,La luz que entra por las ventanas...juraríais que a ratos es de día y a ratos de noche. No hay ningún efecto inmediato.
 EventMythosRound01.button1,{qst:CONTINUE}
 EventMythosRound03.button1,{qst:CONTINUE}
-EventMythosRound02.text,"Algo se ha movido y se ha metido bajo el sofá de la esquina, pero ya no está ahí. Al menos de eso está convendido/a {rnd:hero}. Parecía una...serpiente, pero esos ojos rojos y esas fauces...¿qué está pasando?, ¿nos han echado alucinógenos en la bebida? Por otro lado puede ser el estrés y los nervios por estar aquí encerrados; ya te había pasado antes, en alguna otra ocasión.\n\nRealiza una tirada de ({lore}; 3). Si la superas, te acercas al sofá y miras debajo para asegurarte de que es tu mente la que te está jugando una mala pasada; acto seguido vuelves a donde estabas. Si fallas la tirada, sufres {qst:HORROR1}; ves nuevamente esa ""serpiente"" moverse por la habitación, entre las sombras. Es...enorme y va a por tí. Sientes la necesidad de salir de la habitación cuanto antes, ¡quieres sobrevivir!"
+EventMythosRound02.text,"Algo se ha movido y se ha metido bajo el sofá de la esquina, pero ya no está ahí. Al menos de eso está convendido/a {rnd:hero}. Parecía una...serpiente, pero esos ojos rojos y esas fauces...¿qué está pasando?, ¿nos han echado alucinógenos en la bebida? Por otro lado puede ser el estrés y los nervios por estar aquí encerrados; ya te había pasado antes, en alguna otra ocasión.\n\nRealiza una tirada de ({lore}; 2). Si la superas, te acercas al sofá y miras debajo para asegurarte de que es tu mente la que te está jugando una mala pasada; acto seguido vuelves a donde estabas. Si fallas la tirada, sufres {qst:HORROR1}; ves nuevamente esa ""serpiente"" moverse por la habitación, entre las sombras. Es...enorme y va a por tí. Sientes la necesidad de salir de la habitación cuanto antes, ¡quieres sobrevivir!"
 EventMythosRound03.text,Una suave melodía suena desde algún lado de la casa, pero parece que solo {rnd:hero} puede oírla. Realiza una tirada de ({will}; 2). Si la superas, te convences de que es solo una imaginación tuya, probablemente ocasionada por los nervios de la situación. Si fallas la tirada, sufres {qst:HORROR1}.
 EventMythosRound02.button1,{qst:CONTINUE}
 EventOpenWithKey01.text,Abres la puerta utilizando la llave. Decides quedarte con las llaves, seguro que te pueden ser de utilidad más adelante.\n\n{qst:TOKENEXPLOREOFF}
@@ -170,7 +170,7 @@ EventLibraryItem02Open.text,Das un vistazo rápido al libro. Trata sobre rituale
 EventLibraryItem02Open.button1,{qst:CONTINUE}
 TokenLibraryItem01.text,Un viejo diario.
 TokenLibraryItem01.button1,{qst:PICKUP}
-EventLibraryItem01B.text,Aquieres {c:QItemOldJournal} {MAD20}. Parece escrito en sangre. Intentas leer algo pero está todo en alguna lengua muerta. Quizá puedas entender algo...
+EventLibraryItem01B.text,Adquieres {c:QItemOldJournal} {MAD20}. Parece escrito en sangre. Intentas leer algo pero está todo en alguna lengua muerta. Quizá puedas entender algo...
 EventLibraryItem01A.button1,{qst:CONTINUE}
 EventLibraryItem01C.text,"¡Eso es!, se trata de una de las lenguas muertas que alguna vez te ayudó a descifrar un amigo al que llevaste material ""confiscado"". No recuerdas mucho, pero lo suficiente como para saber que se trata de rituales relacionados con la magia más oscura; la relacionada con el sacrificio humano.\n\nGanas {qst:CLUE1}.\n\n{qst:TOKENSEARCHOFF}"
 EventLibraryItem01C.button1,{qst:CONTINUE}
@@ -234,7 +234,7 @@ EventCultistOfficeAppear.button1,{qst:CONTINUE}
 EventCultistOfficeAppear.text,Acto seguido se desploma y aparece frente a tí y aparece un {c:SpawnMonster02} {MAD20}.\n\nColoca su ficha en el lugar indicado.
 EventCorridor02ViewMoreShow06.text,{qst:MAYMOVE}
 EventCorridor02ViewMoreShow05.button1,{qst:CONTINUE}
-quest.name,La mansión de los sacrificios (v0.8.1)
+quest.name,La mansión de los sacrificios (v0.8.2)
 EventInit01A.button1,{qst:CONTINUE}
 EventInit01B.text,No recordáis mucho acerca de vuestro pasado más inmediato, pero sí sabéis cómo ha sido siempre vuestro camino...
 EventInit01B.button2,Todo lo que habéis conseguido, lo habéis luchado
@@ -243,7 +243,7 @@ EventInit01C01.button1,{qst:CONTINUE}
 EventInit01C02.text,Con el esfuerzo y el trabajo duro habéis conseguido llegar alto.\n\nCada investigador comienza con {qst:CLUE1}.
 EventInit01C02.button1,{qst:CONTINUE}
 EventInit01B.button3,Vivir es una constante lucha
-EventInit01C03.text,"Cada paso que habéis dado ha sido tras superar cantidad de dificultades. Lo que estáis viviendo ahora no es sino otra más de tantas calamidades que rigen vuestro día a día.\n\nCada investigador comienza con <color=""cyan"">{qst:CLUE1}</color>."
+EventInit01C03.text,Cada paso que habéis dado ha sido tras superar cantidad de dificultades. Lo que estáis viviendo ahora no es sino otra más de tantas calamidades que rigen vuestro día a día.\n\nCada investigador comienza con {qst:CLUE1}.
 EventInit01C03.button1,{qst:CONTINUE}
 EventInit02A.button1,{qst:CONTINUE}
 EventInit02B.button1,{qst:CONTINUE}
@@ -311,7 +311,7 @@ EventDoorToHailRoom02Opened03.button1,Claro cariño, ven conmigo, yo te proteger
 EventDoorToHailRoom02Opened04.button1,{qst:CONTINUE}
 EventDoorToHailRoom02Opened03A.button1,{qst:CONTINUE}
 EventDoorToHailRoom02Opened03.button2,No, solo estoy buscando una llave.
-EventDoorToHailRoom02Opened03A.text,La niña sonríe y parece más tranquila. Baja el arma y se dispone a seguirte. Te agarra de la ropa con una mano; parece sentirse más protegida. El perro no se separa de ella.\n\nA partir de ahora la niña y el perro te seguirán allá donde vayas. Como acción de intercambio la niña podrá cambiar el investigador con el que va, pero el perro siempre irá junto a la niña.\n\{qst:HORRORDISCUPONE}. Si no tienes ninguna, descarta 1 carta de horror boca abajo.\n\nEstá claro que no tenían nada bueno pensado para esta niña. Seguramente tenían pensado ofrecerla en sacrificio a alguna deidad...mejor ni pensarlo.\n\nGanas {qst:CLUE2}.\n\nSi hay algún monstruo al alcance del perro, este ataca. Su ataque se considera Arma de Filo. Los atributos del perro son:\n3 {strength}\n4 {agility}\n1 {lore}\n2 {influence}\n5 {observation}\n\nDe igual manera, el perro puede ser receptor de ataques. Tiene 5 puntos de vida y 4 de horror. En cada ronda se repetirán los atributos del perro. No obstante, es recomendable apuntarlos para cuando realice u reciba un ataque. Si el perro es derrotado en algún momento, todos los investigadores reciben {qst:HORROR1} boca arriba. Además, lo llevarán con ellos para sacarlo de ese lugar. Esto no supondrá penalización alguna para el que lo cargue.
+EventDoorToHailRoom02Opened03A.text,La niña sonríe y parece más tranquila. Baja el arma y se dispone a seguirte. Te agarra de la ropa con una mano; parece sentirse más protegida. El perro no se separa de ella.\n\nA partir de ahora la niña y el perro te seguirán allá donde vayas. Como acción de intercambio la niña podrá cambiar el investigador con el que va, pero el perro siempre irá junto a la niña.\n\{qst:HORRORDISCUPONE}. Si no tienes ninguna, descarta 1 carta de horror boca abajo.\n\nEstá claro que no tenían nada bueno pensado para esta niña. Seguramente tenían pensado ofrecerla en sacrificio a alguna deidad...mejor ni pensarlo.\n\nGanas {qst:CLUE2}.\n\nSi hay algún monstruo al alcance del perro, este ataca. Su ataque se considera Arma de Filo de 2 de daño. Los atributos del perro son:\n3 {strength}\n4 {agility}\n1 {lore}\n2 {influence}\n5 {observation}\n\nDe igual manera, el perro puede ser receptor de ataques. Tiene 5 puntos de vida y 4 de horror. En cada ronda se repetirán los atributos del perro. No obstante, es recomendable apuntarlos para cuando realice u reciba un ataque. Si el perro es derrotado en algún momento, todos los investigadores reciben {qst:HORROR1} boca arriba. Además, lo llevarán con ellos para sacarlo de ese lugar. Esto no supondrá penalización alguna para el que lo cargue.
 EventDoorToHailRoom02Opened03B01.button1,{qst:CONTINUE}
 EventDoorToHailRoom02Opened03B03.text,Se te hiela la sangre al escuchar un gruñido, seguido de ladridos y gritos de terror de la niña...\n\n¿Qué has hecho? Has sentenciado a esa pobre criatura a una muerte segura.\n\nTus remordimientos pueden contigo. Sufres {qst:HORROR3} anulados por {will} -1. Luego {qst:HORRORPUTUP2}.
 EventDoorToHailRoom02Opened03B02.button1,{qst:CONTINUE}
@@ -319,7 +319,7 @@ EventDoorToHailRoom02Opened03B01.text,El rostro de la niña se llena de tristeza
 EventDoorToHailRoom02Opened03B02.text,- ¡No os necesitamos! Vamos Toby, salgamos de aquí.\n\nLa niña te aparta y se marcha lámpara en mano por donde has venido.
 EventDogAttack.button1,{qst:CONTINUE}
 EventDoorToHailRoom02Opened03B03.button1,{qst:CONTINUE}
-EventDogAttack.text,Si hay algún monstruo al alcance del perro, este ataca. Su ataque se considera Arma de Filo. Los atributos del perro son:\n3 {strength}\n4 {agility}\n1 {lore}\n2 {influence}\n5 {observation}\n\nDe igual manera, el perro puede ser receptor de ataques. Tiene 4 puntos de vida y {qst:HORROR3}. Es recomendable apuntarlos para cuando realice u reciba un ataque. Si el perro es derrotado en algún momento, todos los investigadores a su alcance reciben {qst:HORROR1} y lo llevarán con ellos para sacarlo de ese lugar.\n
+EventDogAttack.text,Si hay algún monstruo al alcance del perro, este ataca. Su ataque se considera Arma de Filo de 2 de daño. Los atributos del perro son:\n3 {strength}\n4 {agility}\n1 {lore}\n2 {influence}\n5 {observation}\n\nDe igual manera, el perro puede ser receptor de ataques. Tiene 4 puntos de vida y {qst:HORROR3}. Es recomendable apuntarlos para cuando realice u reciba un ataque. Si el perro es derrotado en algún momento, todos los investigadores a su alcance reciben {qst:HORROR1} y lo llevarán con ellos para sacarlo de ese lugar.\n
 TokenWardrobe01.text,Un armario.
 TokenWardrobe01.button1,{qst:OPEN}
 EventWardrobe01OpenedDifficulty01.text,Encuentras un {c:QItemFireWeapon01}{MAD20}.\n\n{qst:TOKENSEARCHOFF}

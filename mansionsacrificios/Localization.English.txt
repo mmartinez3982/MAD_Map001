@@ -1,2 +1,506 @@
 .,English
-quest.name,Scenario 1
+CLUE1,"<color=""cyan""> 1 clue {clue} </color>"
+CLUE2,"<color=""cyan""> 2 clues {clue} </color>"
+CLUE3,"<color=""cyan""> 3 clues {clue} </color>"
+HORROR1,1 Horror
+HORROR2,2 Horror
+HORROR3,3 Horror
+HORRORPUTUP1,Put 1 horror card face up
+HORRORPUTUP2,Put 2 horror cards face up
+HORRORALLPUTUP1,put 1 horror card face up
+ATTACK,Attack
+CANCEL,Cancel
+CONTINUE,Continue
+EXPLORE,{action} Explore
+INSPECT,{action} Inspect
+NEVERMIND,"<i> ""Doesn't matter"" </i>"
+OPEN,{action} Open
+OPENWITHKEY,{action} Open with the key
+PICKUP,{action} Take
+SEARCH,{action} Search
+RESOLVE,{action} Resolve
+READ,{action} Read
+MAYMOVE,You may move 1 space into the explored area.
+TOKENSEARCHON,Place a <b>Search</b> token at the indicated place.
+TOKENSEARCHOFF,Discard the <b> Search</b> token.
+TOKENEXPLOREON,Place an <b>Explore</b> token at the indicated place.
+TOKENEXPLOREOFF,Discard the <b>Explore</b> token.
+TOKENINTERACTON,Place an <b>Interaction</b> token at the indicated place.
+TOKENINTERACTOFF,Discard the <b>Interaction</b> token.
+TOKENLOOKON,Place a <b>Sight</b> token at the indicated place.
+TOKENLOOKOFF,Discard the <b>Sight</b> token.
+TOKENDARKON,Place a <b>Darkness</b> token at the indicated place.
+TOKENDARKOFF,Discard the <b>Darkness</b> token.
+TOKENWALLON,Place a <b>wall</b> token at the indicated place.
+TOKENWALLOFF,Discard the <b>wall</b> token.
+TOKENWALLSHELVESON,Place a <b>wall with shelf</b> token at the indicated place.
+TOKENWALLSHELVESOFF,Discard the <b>wall with shelf</b> token.
+HORRORWINDOWNONE,Receive <b>{qst:HORROR1} facedown</b>.
+HORRORWINUPONE,Receive <b>{qst:HORROR1} faceup</b>.
+HORRORDISCDOWNONE,Discard <b>{qst:HORROR1} faceup</b>.
+HORRORDISCUPONE,Discard <b>{qst:HORROR1} facedown</b>.
+HORRORALLWINDOWNONE,All investigators recive <b>{qst:HORROR1} face down</b>.
+HORRORALLWINUPONE,All investigators receive <b>{qst:HORROR1} face up</b>.
+HORRORALLDISCDOWNONE,All investigators discard <b>{qst:HORROR1} face down</b>.
+HORRORALLDISCUPONE,All investigators discard <b>{qst:HORROR1} face up</b>.
+TokenSittingRoomMecanism.button1,{qst:RESOLVE}
+EventPuzzleSittingRoomResolved01.button1,{qst:CONTINUE}
+TokenSittingRoomDoor2.text,This door may lead to the hallway. Is closed.
+TokenSittingRoomDoor2.button1,{qst:OPENWITHKEY}
+quest.authors,Moisés
+quest.authors_short,Moisés
+quest.synopsys,Shall you unravel the mysteries behind this mansion?
+EventInit03.button1,{qst:CONTINUE}
+EventInit01A.text,You look around and you delay a few seconds to be aware of something: you do not remember anything. The headache is unbearable. You get up and in an effort to try to remember, you vaguely get it. \n\nYou're a group of associated dedicated to research people who delves into the paranormal evil purposes. Were you conducting an investigation into a group of fanatics. After a while tracing them you came to think that they were mere unbalanced who had not really related to anything paranormal, until ... Yes, that is; you had come up with something important and you went to check it out. \n\nAs you look at each other, you realize that you all seem equally confused and lost. How long have you been there? And where are you?
+EventInit04.button1,{qst:CONTINUE}
+EventInit03.text,The headache is unbearable. You wake up bewildered in the living room of what appears to be a mansion. You do not remember very well what you are doing there or how you got there. When you manage to sit up on your seats, you notice that you all have a glass of wine either in your hand or spilled on top of you or on the floor; Someone has spilled something in your drink. \n\nAll investigators acquire the <b>Dazed</b> state.
+EventSittingRoomDoor2Show.text,There is a door on the side of the room. \n\n {qst:TOKENEXPLOREON}
+EventSittingRoomDoor2Show.button1,{qst:CONTINUE}
+EventSittingRoomMecanismShow02.text,On the shelf you see a series of books, documents and objects rather strange and very old. \n\nPlace an <b>Interaction</b> token at the indicated place.
+EventSittingRoomMecanismShow02.button1,{qst:CONTINUE}
+EventSittingRoomDoor2Broken.text,When you hit the door with the shoulder, this gives way and get wood disengaging the hinges. \n\n Place the token {MAD20} as indicated. {qst:MAYMOVE} \n\n {qst:TOKENEXPLOREOFF}
+EventSittingRoomDoor2Broken.button1,{qst:CONTINUE}
+TokenSittingRoomDoor2Key.text,A key. It does not have any engraving, so you do not know its use.
+TokenSittingRoomDoor2Key.button1,{qst:PICKUP}
+EventKeyConseguida.text,You take the key. Add the object {c:QItemKey01} {MAD20} to inventory \n\n {qst:TOKENSEARCHOFF}.
+EventKeyConseguida.button1,{qst:CONTINUE}
+EventShowCorridor01.text,A long hallway filled with paintings ... no doubt, you are in a mansion.
+EventSittingRoomDoor2Opened.text,The door opens into a long corridor.
+EventShowCorridor01.button1,{qst:CONTINUE}
+EventWomanCrying1.button1,{qst:CONTINUE}
+EventCorridor01ShowMore.text,When a investigator nearby, you can see what lies beyond. Will the woman be in the hallway? \n\n {qst:TOKENLOOKON}
+EventWomanCrying1.text,What appears to be a woman's cry comes from beyond what the eye can see. It would be necessary to verify if she is well. Maybe it will help you to know where you are and why you are here. But ... what was that other noise that has been heard?
+EventCorridor02Table.button1,{qst:CONTINUE}
+TokenCorridor01ViewMore.text,Do you take a look?
+EventCorridor01ShowMore.button1,{qst:CONTINUE}
+TokenCorridor01TablePapers.text,A lot of messy papers.
+TokenCorridor01TablePapers.button1,{action} Investigate
+EventSittingRoomNotebookShow.text,There is a notebook on the table. It could contain something that reveals where you are or who this house belongs to. \n\n {qst:TOKENSEARCHON}
+EventSittingRoomNotebookShow.button1,{qst:CONTINUE}
+EventSittingRoomDoor2KeyShow.text,Something shines in the seat next to the door. \n\n {qst:TOKENSEARCHON}.
+EventSittingRoomDoor2KeyShow.button1,{qst:CONTINUE}
+EventSittingRoomBoxesShow.text,Some boxes stacked behind the bar. There might be something useful. \n\n {qst:TOKENSEARCHON}
+EventSittingRoomBoxesShow.button1,{qst:CONTINUE}
+EventDogBark01.button1,{qst:CONTINUE}
+EventCrows01.text,Ravens ... in this area and in that amount? You do not remember having traveled to any area where crows are common. They seem to have been scared, probably because of the dog.
+EventDogBark01.text,A dog quite far away. It seems upset.
+EventCrows01.button1,{qst:CONTINUE}
+EventMythosRound01.text,The light that comes in through the windows ... you would swear that at times it is day and at times at night. There is no immediate effect.
+EventMythosRound01.button1,{qst:CONTINUE}
+EventMythosRound03.button1,{qst:CONTINUE}
+EventMythosRound02.text,"Something has moved and crawled under the sofa in the corner, but it is no longer there. At least {rnd:hero} is convinced of that. It looked like a ... snake, but those red eyes and those jaws ... what's going on? Did they put hallucinogens in our drink? On the other hand, it may be stress and nerves from being locked up here; It's happened to you before, on some other occasion. \n\nMake a roll of ({lore}; 2). If you get over it, you go over to the sofa and look underneath to make sure it's your mind that is playing tricks on you; then you go back to where you were. If you fail, you suffer {qst:HORROR1}; you see that ""snake"" moving around the room again, between the shadows. It's ... huge and it's coming for you. You feel the need to get out of the room as soon as possible, you want to survive!"
+EventMythosRound03.text,A soft melody sounds from somewhere in the house, but it seems only {rnd:hero} can hear it. Roll a ({will}; 2). If you get over it, you convince yourself that it is just an imagination of yours, probably caused by the nerves of the situation. If you fail the roll, suffer {qst:HORROR1}.
+EventMythosRound02.button1,{qst:CONTINUE}
+EventOpenWithKey01.text,You open the door using the key. You decide to keep it, surely it can be useful later. \n\n {qst:TOKENEXPLOREOFF}.
+EventOpenWithKey01.button1,{qst:CONTINUE}
+TokenSittingRoomDoor2.button2,{action} Pull down
+EventSittingRoomDoor2Break.text,You can try to break the door, but it seems quite difficult.
+EventSittingRoomDoor2Break.button1,{strength} Pull down
+EventOpenWithKey02.text,You do not have the key. Not spend action {action}.
+EventOpenWithKey02.button1,{qst:CONTINUE}
+EventSittingRoomDoor2Opened.button1,{qst:CONTINUE}
+EventCorridor01TablePapersCheckSuccess.button1,{qst:CONTINUE}
+EventCorridor01TablePapersCheck01.button1,{qst:CONTINUE}
+EventCorridor01TablePapersCheck01.text,You read what little there is legible. Make a {lore} roll.
+TokenSittingRoomBoxes.button1,{action} Search
+TokenSittingRoomBoxes.text,Boxes are piled up behind the counter. Perhaps there is something useful.
+EventCorridor01TablePapersCheckSuccess.text,It seems to be an event log as a diary of events that have been taking place in recent weeks, written in pen, no doubt. Almost everything is illegible because of ink stains and ... blood? The last entry corresponds to today and how little can be read: \n- They have already arrived, so we can finish our plans. \n\nYou get {c:QItemCorridor01Notes} {MAD20}. You win {qst:CLUE1} \n\n {qst:TOKENSEARCHOFF}.
+EventSittingRoomBoxesSearch.text,Find one {c:QItemSittingRoomBoxesItem} {MAD20}. \n\n {qst:TOKENSEARCHOFF}.
+EventSittingRoomBoxesSearch.button1,{qst:CONTINUE}
+TokenSittingRoomNotebook.text,There is a book. Its roof looks of some kind of animal skin.
+TokenSittingRoomNotebook.button1,{qst:READ}
+EventSittingRoomNotebookSearch.text,Find {c:QItemSittingRoomNotebookItem} {MAD20}. \n\n {qst:TOKENSEARCHOFF}
+EventSittingRoomNotebookSearch.button1,{qst:CONTINUE}
+TokenBathRoom.text,Surely the cries came from behind this door.
+TokenBathRoom.button1,{qst:OPEN}
+EventBathRoomOpen.text,You open the door of the bathroom. There seems to be no ... where then came those cries? \n\n {qst:TOKENEXPLOREOFF}
+EventBathRoomOpen.button1,{qst:CONTINUE}
+EventBathRoomMirror.text,There is a mirror with drawers. You may have some medicines that can help with headaches and stunning you have.
+EventBathRoomMirror.button1,{qst:CONTINUE}
+EventBathRoomMirrorOpen01.button1,{qst:CONTINUE}
+EventBathRoomMirrorOpen03.button1,Open the curtain
+TokenBathRoom2.text,The door is bolted, it does not open.
+TokenBathRoom2.button1,{action} Force
+EventBathRoom2Open.text,Try to open the door to force {strength}.
+EventBathRoom2Open.button1,{strength} Pull down
+TokenBathRoomMirror.text,A mirror with a drawer. You can hold medicines, bandages and other.
+TokenBathRoomMirror.button1,{qst:OPEN}
+TokenCorridor01ViewMore.button1,{qst:CONTINUE}
+EventCorridor01ViewMoreShow1.button1,{qst:CONTINUE}
+EventCorridor01ViewMoreShow1.text,The corridor ends in a room. Cryes could come away \n\n {qst:TOKENEXPLOREON}.
+EventCorridor01ViewMoreShow3.text,The hallway turns the corner. There are some seats and a large carpet.
+TokenCorridor03Door04.text,An ordinary shelf, like the others in the hall.
+EventCorridor01ViewMoreShow4.button1,{qst:CONTINUE}
+EventCorridor01ViewMoreShow3.button1,{qst:CONTINUE}
+EventCorridor01ViewMoreShow5.button1,{qst:CONTINUE}
+EventCorridor01ViewMoreShow4.text,There is a door on one side of the hall. \n\n {qst:TOKENEXPLOREON}
+EventCorridor02ViewMoreShow01.text,There is a door on one side of the hall. \n\n {qst:TOKENEXPLOREON}
+CustomMonsterCtuluth.monstername,CustomMonster0
+EventFinalMonsterAppear.text,The fabric of reality is torn ...
+CustomMonsterCtuluth.info,-
+EventFinalMonsterAppear.button1,{qst:CONTINUE}
+SpawnMonster01A.text,A guy with a black robe appears around the corner. \n\n They've escaped! - shouts while charging towards you. \n\nPlace a {c:SpawnMonster01A} {MAD20}.
+SpawnMonster01B.text,Another type with a bloody tunic appears near your \n\n will not escape here alive ... - whisper while licking the blood of a knife \n\nColoca one tab. {c:SpawnMonster01B} {MAD20}.
+EventCultistDefeated.text,The cultist falls killed, leaving the ground {c:QItemDropMonster01a} {MAD20}. You find also a {c:QItemDropMonster01b} {MAD20} hanging from his neck \n\nAs free action, any investigator who is in the same space as the body of the cultista can now take objects \n\nall investigators gain {qst:CLUE1}.
+EventCultistDefeated.button1,{qst:CONTINUE}
+EventBathRoom2Openeda.button1,{qst:CONTINUE}
+EventBathRoom2Openedb.text,Place a sheet of {c:QItemBathRoomWoodStick MAD20} {} on the floor where the door used to be \n\n {qst:TOKENEXPLOREOFF}. \n\n {qst:MAYMOVE}
+EventBathRoom2Openeda.text,You destroy the old wooden door. Almost entirely it is in tatters, but there is a piece that might be for something.
+EventBathRoom2Openedb.button1,{qst:CONTINUE}
+TokenCorridor03Desk.button1,{action} Inspect
+EventCorridor03DeskOpen.text,You find {c:QItemKeroseneLantern} {MAD20}.
+TokenCorridor03Desk.text,A well-lit desk. Maybe there could be some clue or something that is useful to you.
+EventCorridor03DeskOpen.button1,{qst:CONTINUE}
+EventGlassCrash01a.button1,{qst:CONTINUE}
+EventGlassCrash01b.text,The noise doesn't stop, what creature could be making that noise? It certainly doesn't look like a dog ...
+EventGlassCrash01a.text,You hear how one of the windows in the living room where you woke up breaks and shatters.
+EventGlassCrash01b.button1,{qst:CONTINUE}
+EventBathRoomMirrorOpen01.text,You open the drawer of the mirror. You find {c:QItemWounds01} {MAD20}.
+EventBathRoomMirrorOpen03.button2,Ignore crying
+EventBathRoomMirrorOpen02.text,When you close the mirror, the bathroom light goes out and the door closes behind you. \n\n {qst:TOKENDARKON}
+EventBathRoomMirrorOpen04.button1,{qst:CONTINUE}
+EventBathRoomMirrorOpen03.text,It's that crying again! It's there with you, in the bathroom! It appears to be coming from behind the bathtub curtain ... \n\nMake a roll of ({will}; 2). If you overcome it, you maintain control and repeat to yourself that there is nothing there, that it is all your imagination, because of the tense situation you are living. If you fail the roll, you receive {qst:HORROR1}. \n\nFinally, {qst:HORRORPUTUP1}.
+EventBathRoomMirrorOpen05.button1,{qst:CONTINUE}
+EventBathRoomMirrorOpen04.text,You slam the curtain aside. You find the lifeless body of a woman in her forties. Given her odor and decomposition, she appears to have been dead for several days. \n\nYou win {qst:CLUE1} and {qst:HORROR1}. Anyone in the bathroom gets {qst:HORROR1} too.
+EventStartRoundBathroomViewed.button1,{qst:CONTINUE}
+SpawnPriestOfDagon.text,Place a {c:SpawnPriestOfDagon} {MAD20} token in the indicated place.
+TokenLibraryItem02.text,A worn book located on the couch. Is closed.
+TokenLibraryItem02.button1,{qst:OPEN}
+EventLibraryItem02Open.text,You take a quick look at the book. It deals with rituals about the connection between the different unexplored planes and ours, when certain astronomical conditions are met. It looks more like an entertainment book, who could take this seriously? \n\nAlthough it seems that the books on the shelves are all about the same topic. \n\nYou flip over a few pages to read a little more, when one falls {c:QItemPhotographicEvidence} {MAD20}. \n\n You win {qst:CLUE2}. \n\n {qst:TOKENSEARCHOFF}
+EventLibraryItem02Open.button1,{qst:CONTINUE}
+TokenLibraryItem01.text,An old diary.
+TokenLibraryItem01.button1,{qst:PICKUP}
+EventLibraryItem01B.text,You acquire {c:QItemOldJournal} {MAD20}. It seems written in blood. You try to read something but it is all in some dead language. Maybe you can understand something ...
+EventLibraryItem01A.button1,{qst:CONTINUE}
+EventLibraryItem01C.text,"That's it! This is one of the dead languages that you were once helped to decipher by a friend to whom you took ""confiscated"" material. You don't remember much, but enough to know that these are rituals related to the darkest magic; the one related to human sacrifice. \n\nYou win {qst:CLUE1}. \n\n {qst:TOKENSEARCHOFF}"
+EventLibraryItem01C.button1,{qst:CONTINUE}
+TokenLibraryDoor01.text,A door. Below is a lot of light. On the other side is the sound of something overloading. Perhaps a light bulb that is receiving voltage surges or drops.
+TokenLibraryDoor01.button1,{qst:OPEN}
+EventLibraryDoor01Opened01.button1,{qst:CONTINUE}
+EventLibraryDoor01Opened02.text,The lamp in the corner makes noise intermittently. At any moment, the bulb could break if it continues like this.
+EventLibraryDoor01Opened01.text,The door opens into what appears to be a library. It is very well lit.
+EventLibraryDoor01Opened02.button1,{qst:CONTINUE}
+EventLibraryDoor01Opened03.text,There is a book on the couch.
+EventLibraryDoor01Opened03.button1,{qst:CONTINUE}
+EventLibraryDoor01Opened04.text,What looks like a book or a notebook is lying on the ground.
+EventLibraryDoor01Opened04.button1,{qst:CONTINUE}
+EventCorridor02Table.text,When you look to the other side you find a broken table. There are a lot of papers lying on the floor. There appears to have been a struggle or some kind of fight. How strange that no one has put it in its place or dried the water in the vase that is lying on the floor.
+EventCorridor02ViewMoreShow01.button1,{qst:CONTINUE}
+EventCorridor02ViewMoreShow02.text,{qst:TOKENWALLON}
+EventCorridor02ViewMoreShow02.button1,{qst:CONTINUE}
+EventCorridor02ViewMoreShow04.button1,{qst:CONTINUE}
+EventCorridor02ViewMoreShow03.button1,{qst:CONTINUE}
+TokenLibraryDoor02.text,Strange singing sounds can be heard behind the door, which is closed. It seems quite a bit more resistant than the ones you have found so far. It's not worth trying to knock it down, it would only serve to injure you. Nor do you think that what is behind is anything good ...
+TokenLibraryDoor02.button1,{qst:CONTINUE}
+EventLibraryDoor01Opened05.text,There is a door on the other side of the library. Voices are heard coming from the other side.
+EventLibraryDoor01Opened05.button1,{qst:CONTINUE}
+EventInit04.text,Place the investigators scattered around the room, by the different seats available. You can use any seat in the whole room. \n\nOnly when you're done, go ahead.
+EventInit02C.text,{rnd: hero} finds in a pocket of his jacket a {c:QItemRandomLigh01} {MAD20}. \n\nIn contrast ... the investigator sitting to his right feels weak and ... very disconcerting ... loses {qst:CLUE1}.
+EventInit01C01.text,Life has always smiled upon you and luck has been with you ... until now. \n\nEach investigator begins with {qst:CLUE2}.
+UIImageInit01.button1,{qst:CONTINUE}
+EventInit02B.text,{rnd: hero} finds {c:QItemRandomWeapon01} {MAD20} under his coat. \n\nAdditionally, he/she gets {qst:CLUE1} more.
+TokenCorridor03Door02.text,Is closed. There are three locks; one of them looks silver, another gold, and the third ... is very old. Maybe you can find the keys by investigating the rest of the mansion.
+TokenCorridor03Door02.button1,{qst:OPEN}
+EventBathRoomMirrorOpen00.button1,{qst:CONTINUE}
+EventBathRoomMirrorOpen05.text,You decide to ignore the cry of the woman behind the curtain. But every time you feel her closer to her ... she no longer comes from behind the curtain, now she is behind you, you turn to where you turn, she is always there, in the most absolute darkness, more and more next. You feel an icy breath that runs gently down the back of your neck, making every hair on your body stand on end. \n\nYou and everyone in the bathroom receive {qst:HORROR2} and turn {qst:HORROR1} face up.
+EventBathRoomMirrorOpen00.text,As you approach the mirror, something cracks your mind. With each step you take you notice the body getting heavier and heavier, whispers arise from every corner of the bathroom; whispers of beings that do not inhabit this world. \n\nYou stand in front of the mirror and see the reflection of failure. You suffer {qst:HORROR2} overridden with ({will}; 2). Then {qst:HORRORPUTUP1}.
+EventLibraryItem01A.text,From the moment you put your hands on the journal, something keeps you completely spellbound; a strange power ... \n\nUnconsciously, you turn pages of the journal, muttering chants in a dead language. After a while, you come to yourself and realize that you have drawn blood on the palm of your hand and have started to write something in the diary, still illegible. \n\nAny investigator within reach receives {qst:HORROR2} . \n\nThen {qst:HORRORPUTUP1}.
+EventBathRoomMirrorOpen02.button1,{qst:CONTINUE}
+UIBathRoomMirrorOpen.button1,{qst:CONTINUE}
+EventLibraryItem01B.button1,Decoding} {lore
+TokenGoldenKey.button1,{qst:CONTINUE}
+EventGoldenKeyFound.text,You find {c:QItemUniqueGoldKey} {MAD20}. \n\n {qst:TOKENSEARCHOFF}
+TokenDoorToHailRoom02.text,Behind this door you can hear something, maybe a heavy breathing, a grunt and a whisper ... \nThe door has a silver lock and a very old one.
+TokenDoorToHailRoom02.button1,{qst:OPEN}
+TokenCorridor03DoorSide.text,A door. You do not hear anything to the other side.
+TokenCorridor03DoorSide.button1,{qst:OPEN}
+EventOfficeDoorOpen01.button1,{qst:CONTINUE}
+EventOfficeDoorOpen02A.button1,{qst:CONTINUE}
+EventOfficeDoorOpen01.text,You open the door. This looks like some kind of office. \n\n {qst:TOKENEXPLOREOFF}
+EventOfficeDoorOpen02B.button1,{qst:CONTINUE}
+EventOfficeDoorOpen03.text,There is a guy sitting. As you walk into the room she fixes her gaze on you, unblinking. She begins to move her mouth, as if she is speaking, but without uttering a single word. \n\nPlace a Cultist token {MAD20} in the indicated place.
+EventOfficeDoorOpen03.button1,{qst:CONTINUE}
+SpawnMonster02.button1,{qst:CONTINUE}
+SpawnMonster02.text,Then the cultist collapses on the desk and appears in front of you, like out of nowhere, a {c:SpawnMonster02} {MAD20}. \n\nPlace his token in the right place.
+TokenCultistOffice.button1,{action} Attack
+TokenCultistOffice.text,It seems unconscious.
+SpawnCultistOffice.button1,{qst:CONTINUE}
+EventMonster02Appeared.button1,{qst:CONTINUE}
+EventMonster02Appeared.text,The creature watches you, sniffs the air, and looks behind you while it seems to almost smile.
+SpawnMonster03.text,With hardly any noise, you see how a creature similar to the one that has appeared in the office crawls across the ceiling without stopping looking at you, until you are on top of you and emit a shocking roar. You can even notice how his saliva, sticky and smelly, falls on you. \n\nThe situation is over you. You suffer {qst:HORROR2} overridden by {will} +1. If you are alone in the hallway, with no other investigators within reach who can bring you some calm and security, receive {qst:HORROR1} more, this time face-up. \n\nPlace a monster token in the indicated spot.
+SpawnMonster03.button1,{qst:CONTINUE}
+SpawnCultistOffice.text,You attack {c:SpawnCultistOffice} {MAD20}, which rouses him. \n\nFrom now on you do have to make horror and evasion rolls against him.
+EventCultistOfficeAppear.button1,{qst:CONTINUE}
+EventCultistOfficeAppear.text,Then he collapses and appears in front of you and a {c:SpawnMonster02} {MAD20} appears. \n\nPlace his token in the indicated place.
+EventCorridor02ViewMoreShow06.text,{qst:MAYMOVE}
+EventCorridor02ViewMoreShow05.button1,{qst:CONTINUE}
+quest.name,The mansion of sacrifices (v0.8.2)
+EventInit01A.button1,{qst:CONTINUE}
+EventInit01B.text,Any of you remember much about your immediate past, but you do know how your path has always been ...
+EventInit01B.button2,Everything you have achieved, you have fought
+EventInit01B.button1,You have always had help
+EventInit01C01.button1,{qst:CONTINUE}
+EventInit01C02.text,With effort and hard work you have made it to the top. \n\nEach investigator begins with {qst:CLUE1}.
+EventInit01C02.button1,{qst:CONTINUE}
+EventInit01B.button3,Living is a constant struggle
+EventInit01C03.text,Each step you have taken has been after overcoming many difficulties. What you are experiencing now is just another of many calamities that rule your day to day. \n\nEach investigator begins with {qst:CLUE1}.
+EventInit01C03.button1,{qst:CONTINUE}
+EventInit02A.button1,{qst:CONTINUE}
+EventInit02B.button1,{qst:CONTINUE}
+EventInit02A.text,{rnd:hero} finds {c:QItemRandomFireWeapon01} {MAD20} under his coat. \n\nAdditionally, he/she gets {qst:CLUE1} more.
+EventInit02C.button1,{qst:CONTINUE}
+SpawnMonster01A.button1,{qst:CONTINUE}
+SpawnMonster01B.button1,{qst:CONTINUE}
+SpawnWindowMaxDifficulty.button1,{qst:CONTINUE}
+EventDoorToHailRoom02Opened03B.text,Although the dog will be with the girl all the time, who you carry by your side, the token will remain visible here so that you can interact with the dog and indicate whether or not it has been defeated.
+SpawnMonsterRandomWindow.text,Something broke through the classroom window! \n \nPlace a {c:SpawnMonsterRandomWindow} token in the indicated location. \n \nIf there are any investigators in the classroom, receive {qst:HORROR1}.
+SpawnMonsterRandomWindow.button1,{qst:CONTINUE}
+SpawnMonster03B.button1,{qst:CONTINUE}
+SpawnMonster03B.text,When you manage to look away from {c:SpawnMonster03} {MAD20}, something catches your eye. A figure stands rigid, calm, behind a table in the hall. With the gaze of the fiercest hunter, the figure crouches, ready to strike. \n\nPlace a {c:SpawnMonster03B} {MAD20} token in the indicated location. \n\nAny investigator witnessing the scene suffers {qst:HORROR1} due to the unheard of situation; you're going to die, it's a fact.
+TokenCorridor03DoorFront.text,It's locked, it doesn't seem like you can open it. Strange noises are coming from the other side.
+TokenCorridor03DoorFront.button1,{qst:CONTINUE}
+SpawnMonster05.text,The door at the end of the hall opens and a creature crosses its threshold, its mouth bloody. It studies the environment, looking for its next prey. \n\nThe creature fixes its gaze on the closest investigator, within range. It suffers {qst:HORROR2} canceled by {will} +1. If no investigator is within range, the creature moves one space to the nearest investigator and makes a deafening screech. Any investigator within range of the creature suffers {qst:HORROR1}. Then {qst:HORRORALLPUTUP1}.
+SpawnMonster05.button1,{qst:CONTINUE}
+SpawnMonster04.text,Footsteps can be heard from the end of the hall. \n\nPlace a {c:SpawnMonster04} {MAD20} token in the indicated spot.
+SpawnMonster04.button1,{qst:CONTINUE}
+EventOfficeDoorOpen02A.text,{qst:TOKENWALLON}
+TokenOfficeSecretDoor.text,There is a bookcase behind the sofa.
+EventOfficeDoorOpen02B.text,There is a shelfbehind the sofa. It draws attention since it does not fit with the decoration of the office.
+TokenOfficeSecretDoor.button1,{action} Investigate
+EventSecretRoom01Found01.button1,{qst:CONTINUE}
+EventSecretRoom01Found02.text,{qst:TOKENDARKON}
+EventSecretRoom01Found01.text,After pulling some books and paperweights, finally a mechanism is activated and the bookshelf begins to move giving way to a dark room.
+EventSecretRoom01Found02.button1,{qst:CONTINUE}
+EventSecretRoom01Found03.text,Place a passage token in the office. Place another in the secret room. Investigators and monsters can pass through the passage as if it were a normal door.
+EventSecretRoom01Found03.button1,{qst:CONTINUE}
+EventSecretRoom01Found04.text,There is a door leading down some stairs. \n\n {qst:TOKENEXPLOREON}
+EventSecretRoom01Found04.button1,{qst:CONTINUE}
+TokenSecretRoom01OtherDoor.text,Light is visible under the door. But you don't hear any sound.
+TokenSecretRoom01OtherDoor.button1,{qst:OPEN}
+EventHailRoom01Opened01.button1,{qst:CONTINUE}
+EventHailRoom01Opened04.button1,{qst:CONTINUE}
+EventHailRoom01Opened01.text,The door leads into a wide corridor with a couple of rooms to one side.
+EventHailRoom01Opened02.text,Place a wall tile at the end of the hall.
+EventHailRoom01Opened03.text,There is a door at the end of the second room.
+EventHailRoom01Opened03.button1,{qst:CONTINUE}
+EventHailRoom01Opened04.text,There is a chest in one of the bedrooms. It may contain something useful.
+EventHailRoom01Opened02.button1,{qst:CONTINUE}
+TokenHailRoom01Box.text,An old chest with the same symbol as the cultist you saw earlier.
+TokenHailRoom01Box.button1,{qst:OPEN}
+EventHailRoom01BoxOpened.text,You get {c:QItemUniqueSilverKey} {MAD20}.
+EventHailRoom01BoxOpened.button1,{qst:CONTINUE}
+EventCorridor03Door02Opened.button1,{qst:CONTINUE}
+EventCorridor03Door02NotOpened.text,The door will not open. Maybe we can find the keys to the door in the other rooms.
+EventCorridor03Door02Opened.text,You use the three keys to open the door, leading into a huge hall. \n\n {qst:TOKENEXPLOREOFF}
+EventCorridor03Door02NotOpened.button1,{qst:CONTINUE}
+TokenDog.text,- Boof, boof!
+TokenDog.button1,{action} Stroke
+EventDogStrokedFirstTime.button1,{qst:CONTINUE}
+EventDogStroked.text,The dog wags its tail as a token of pleasure. Then he gently pushes her away with his muzzle and looks at you and then at the girl, as if trying to communicate that this is not the time to play tricks and that we have to get out of here and put the girl to safety.
+EventDogStrokedFirstTime.text,The dog wags his tail as a sign of his joy and does some cuteness. You are comforted by the company of a being as faithful as this one in such a difficult time ... Anyone within the dog's reach discards all horror face up. If you don't have any face-up Horrors, he discards {qst:HORROR1}.
+EventDogStroked.button1,{qst:CONTINUE}
+EventDoorToHailRoom02Opened01.button1,{qst:CONTINUE}
+EventDoorToHailRoom02Opened04.text,Next to the door is a closet. \n\n {qst:TOKENSEARCHON}
+EventDoorToHailRoom02Opened01.text,The door leads to a room.
+EventDoorToHailRoom02Opened02.text,As soon as you open the door a dog pounces on you. He deals 1 negated damage to you for {agility} +1. \n\nPlace a dog token in the indicated location.
+EventDoorToHailRoom02Opened05.text,At the back of the room is a chest. \n\n {qst:TOKENSEARCHON}
+EventDoorToHailRoom02Opened05.button1,{qst:CONTINUE}
+EventDoorToHailRoom02Opened02.button1,{qst:CONTINUE}
+EventDoorToHailRoom02Opened03.text,Next to the dog a girl was waiting with a lamp in her hand, ready to attack you. But seeing you, her expression seems to have changed, and she lowers the makeshift weapon while trying to calm the dog: \n\n- Don't Toby, be still! These aren't bad, are they? \n\nThe little girl hesitates a bit as she places her hands firmly on the lamp again. \n\n- You don't wear robes or have that look ... have you come to rescue me?
+EventDoorToHailRoom02Opened03.button1,Sure honey, come with me, I'll protect you.
+EventDoorToHailRoom02Opened04.button1,{qst:CONTINUE}
+EventDoorToHailRoom02Opened03A.button1,{qst:CONTINUE}
+EventDoorToHailRoom02Opened03.button2,No, I'm just looking for a key.
+EventDoorToHailRoom02Opened03A.text,"The girl smiles and seems calmer. She lowers the gun and prepares to follow you. She grabs you by her clothes with one hand; she seems to feel more protected. The dog does not leave her. \n\nFrom now on the girl and the dog will follow you wherever you go. As an exchange action, the girl can change the investigator she goes with, but the dog will always go with the girl. \n\n Discard <b>1 Horror facedown</b>.. If you don't have any, discard 1 face-down horror card. \n \nIt's clear they had nothing good in mind for this girl. They were probably thinking of offering it as a sacrifice to some deity ... better not even thinking about it. \n\nYou win <color=""cyan""> 2 clues {clue} </color>. \n\nIf there is a monster within the dog's reach, it attacks. His attack is considered a 2 damage bladed weapon. The dog's attributes are: \n3 {strength} \n4 {agility} \n1 {lore} \n2 {influence} \n5 {observation} \n\nIn the same way, the dog can be the objective of attacks. He has 5 life points and 4 horror. In each round the dog's attributes will be repeated. However, it is advisable to target them for when he performs or receives an attack. If the dog is defeated at any time, all investigators receive 1 Horror face up. In addition, they will take it with them to remove it from that place. This will not imply any penalty for the one who loads it."
+EventDoorToHailRoom02Opened03B01.button1,{qst:CONTINUE}
+EventDoorToHailRoom02Opened03B03.text,Your blood runs cold when you hear a growl, followed by barks and screams of terror from the girl ... \n\nWhat have you done? You have sentenced that poor creature to certain death. \n\nYour regrets get the better of you. You suffer {qst:HORROR3} overridden by {will} -1. Then {qst:HORRORPUTUP2}.
+EventDoorToHailRoom02Opened03B02.button1,{qst:CONTINUE}
+EventDoorToHailRoom02Opened03B01.text,The girl's face fills with sadness. She just watched her last hopes fade. The dog, worried, tries to cheer her up without success.
+EventDoorToHailRoom02Opened03B02.text,- We don't need you! Come on Toby, let's get out of here. \n\nThe girl pushes you away and leaves, lamp in hand the way you came.
+EventDogAttack.button1,{qst:CONTINUE}
+EventDoorToHailRoom02Opened03B03.button1,{qst:CONTINUE}
+EventDogAttack.text,If there is any monster within the dog's reach, it attacks. His attack is considered a 2 damage bladed weapon. The dog's attributes are: \n3 {strength} \n4 {agility} \n1 {lore} \n2 {influence} \n5 {observation} \n \nIn the same way, the dog can be the recipient of attacks. He has 4 life points and 3 Horror. It is advisable to write them down for when you perform or receive an attack. If the dog is defeated at any point, all investigators within reach of it receive 1 Horror and will take it with them to remove it from that location. \n
+TokenWardrobe01.text,A closet.
+TokenWardrobe01.button1,{qst:OPEN}
+EventWardrobe01OpenedDifficulty01.text,You find a {c:QItemFireWeapon01} {MAD20}. \n\n {qst:TOKENSEARCHOFF}
+EventWardrobe01OpenedDifficulty01.button1,{qst:CONTINUE}
+EventWardrobe01OpenedDifficulty02.text,You find {c:QItemWeapon01} {MAD20}. \n\n {qst:TOKENSEARCHOFF}
+EventWardrobe01OpenedDifficulty02.button1,{qst:CONTINUE}
+EventWardrobe01OpenedDifficulty03.text,You find {c:QItemRandomClue} {MAD20}. \n\n {qst:TOKENSEARCHOFF}
+EventWardrobe01OpenedDifficulty03.button1,{qst:CONTINUE}
+TokenGoldenKey.text,A nightstand. It has a drawer, but it seems closed.
+EventGoldenKeyFound.button1,{qst:CONTINUE}
+TokenCorridor02ViewMore.button1,{qst:CONTINUE}
+EventCorridor02ViewMoreShow05.text,When an investigator is nearby, they can see what lies beyond. \n\n {qst:TOKENLOOKON}
+EventCorridor02ViewMore01.button1,{qst:CONTINUE}
+EventCorridor02ViewMore02.button1,{qst:CONTINUE}
+TokenCorridor02ViewMore.text,Do you take a look?
+EventCorridor02ViewMoreShow04.text,One last door to the end of the hallway.
+EventCorridor02ViewMore01.text,You see the end of the hall.
+EventCorridor02ViewMore05.text,Place a wall token at the end of the hall. There are no more doors.
+EventCorridor02ViewMore02.text,There is a door to the side.
+TokenCorridor04Door01.text,It seems closed, even barricaded.
+EventCorridor02ViewMore03.text,There is a door at the end. A piano plays on the other side ... as if someone has hit it hard.
+TokenCorridor04Door01.button1,{qst:CONTINUE}
+SpawnGotAllKeysDifficulty02.button1,{qst:CONTINUE}
+SpawnGotAllKeysDifficulty02.text,A {c:SpawnGotAllKeysDifficulty02} {MAD20} appears from the closed door closest to an investigator. \n\nPlace a {c:SpawnGotAllKeysDifficulty02} {MAD20} token where applicable.
+SpawnGotAllKeysDifficulty01.text,A {c:SpawnGotAllKeysDifficulty01} {MAD20} appears from the closed door closest to an investigator. \n\nPlace a {c:SpawnGotAllKeysDifficulty01} {MAD20} token where applicable.
+SpawnGotAllKeysDifficulty01.button1,{qst:CONTINUE}
+SpawnGotAllKeysDifficulty03.button1,{qst:CONTINUE}
+SpawnGotAllKeysDifficulty03.text,A {c:SpawnGotAllKeysDifficulty03} {MAD20} appears from the closed door closest to an investigator. \n\nPlace a {c:SpawnGotAllKeysDifficulty03} {MAD20} token where applicable.
+EventCorridor02ViewMore05.button1,{qst:CONTINUE}
+EventCorridor02ViewMore03.button1,{qst:CONTINUE}
+TokenCorridor04Door02.text,It's closed. There is a silver lock.
+TokenCorridor04Door02.button1,{qst:OPEN}
+EventCorridor02ViewMore04.text,{qst:TOKENWALLON}
+EventCorridor02ViewMore04.button1,{qst:CONTINUE}
+TokenCorridor04Wall02.button1,{qst:CONTINUE}
+EventCorridor04Door02Opened01.button1,{qst:CONTINUE}
+EventCorridor04Door02Opened02.text,There is a door to the other side.
+EventCorridor04Door02NotOpened.text,You have no key that fits into the lock. Not spend action {action}.
+EventCorridor04Door02NotOpened.button1,{qst:CONTINUE}
+TokenCorridor03Door01.text,Just a shelf.
+TokenCorridor03Door01.button1,{qst:CONTINUE}
+EventCorridor04Door02Opened01.text,The door opens leading to a large lounge with a grand piano in the background.
+EventCorridor04Door02Opened02.button1,{qst:CONTINUE}
+TokenPianoRoomDoor.text,A door.
+TokenPianoRoomDoor.button1,{qst:OPEN}
+EventPianoRoomDoorOpened01.button1,{qst:CONTINUE}
+EventPianoRoomDoorOpened02.text,There is a bar with several bottles of alcohol.
+EventPianoRoomDoorOpened01.text,The door opens giving you access to a game room.
+EventPianoRoomDoorOpened02.button1,{qst:CONTINUE}
+EventPianoRoomDoorOpened03.text,There is a table with papers and other objects.
+EventPianoRoomDoorOpened03.button1,{qst:CONTINUE}
+TokenBilliardsItem01.text,Several bottles of alcohol.
+TokenBilliardsItem01.button1,{action} Search
+EventBilliardsItem01Searched01.button1,{qst:CONTINUE}
+EventBilliardsItem01Searched02.text,Between the bottles also find {c:QItemUniqueIncriminatingEvidence} {MAD20} \n\n {qst:TOKENSEARCHOFF}.
+TokenBilliardsItem02.text,There is a table with several papers on top.
+TokenBilliardsItem02.button1,{qst:CONTINUE}
+EventBilliardsItem02Searched.button1,{qst:CONTINUE}
+EventBilliardsItem01Searched01.text,You find {c:QItemCommonWhiskey} {MAD20}.
+EventBilliardsItem02Searched.text,You find {c:QItemUniqueConclusiveEvidence} {MAD20}. \n\n {qst:TOKENSEARCHOFF}
+EventBilliardsItem01Searched02.button1,{qst:CONTINUE}
+EventPuzzleSittingRoomResolved03.button1,{qst:CONTINUE}
+EventPuzzleSittingRoomResolved01.text,The mechanism opens.
+TokenSittingRoomMecanism.text,This shelf has a closed glass with some mechanism ...
+EventPuzzleSittingRoomResolved02.button1,{qst:CONTINUE}
+PuzzleSittingRoom.button1,Solve
+EventPuzzleSittingRoomResolved02.text,What is all this, and what are you doing here?
+EventPuzzleSittingRoomResolved03.text,You find {c:QItemUniqueMissingLink} {MAD20}.
+EventPuzzleSittingRoomResolved04.text,You find {c:QItemUniqueGrotesqueStone} {MAD20}.
+EventPuzzleSittingRoomResolved05.text,What is this all about? All the books on the shelf speak of beings from another world and the connection with ours. \n\nIt seems that you have fallen into the hands of fanatics. But, were you coming here following a clue and got caught? And if so ... why are you still alive? These types of people don't usually leave anyone alive. Unless ... \n\nYou win {qst:CLUE2}. If you prefer, share what you've found and your deductions with the other researchers instead. All investigators in range win {qst:CLUE1}.
+EventPuzzleSittingRoomResolved04.button1,{qst:CONTINUE}
+EventPuzzleSittingRoomResolved05.button1,{qst:CONTINUE}
+EventSittingRoomMecanismShow01.text,You see a shelf at the end of the room. \n\nPlace a <b>wall with shelf</b> token in the indicated place.
+EventSittingRoomMecanismShow01.button1,{qst:CONTINUE}
+EventDoorToHailRoom02NotOpened.text,You don't have all the keys that fit the locks. You do not spend action {action}.
+EventDoorToHailRoom02NotOpened.button1,{qst:CONTINUE}
+EventLobbyShow01.text,In a circle, five Cultists  {MAD20} recite chants while keeping their arms raised and their blood spurting through the air toward the portal. \n\nPlace 5 Cultists {MAD20} in the indicated locations.
+EventLobbyShow01.button1,{qst:CONTINUE}
+EventLobbyShow02.text,In the center, something begins to appear. It could be a portal, maybe?
+EventLobbyShow02.button1,{qst:CONTINUE}
+EventLobbyShow03.text,Downstairs, a sinister guy, his face contorted with rage and madness, recites different words from the rest. \n\nHe doesn't seem to be disturbed by your presence, nobody does. \n\nA few moments after crossing the threshold of the door, the guy stops reciting and fixes his gaze on you.
+EventLobbyShow03.button1,{qst:CONTINUE}
+EventLobbyShow04.text,"- You are just in time. I knew I could trust your abilities, ""he says in a strangely calm voice, as he climbs the stairs and stands next to you. \n\n- The ritual has already begun; the blood of five devotees, to open the doors - he says as she takes the girl by her arm."
+EventLobbyShow04.button1,{qst:CONTINUE}
+EventLobbyShow05A.text,When you try to avoid it, you realize that you cannot move. Toby growls and tries to move, but he's in the same situation as you. \n\n- The body of a faithful animal - he says as he grabs the dog and throws it into the portal. Just before disappearing into the portal he can hear the poor animal screaming in terror and frustration. An evil smile is drawn on the guy's face.
+EventLobbyShow06.button1,{qst:CONTINUE}
+EventLobbyShow05B.text,When you try to avoid it, you realize that you can't move. \n\n- Look at you, you haven't even been able to save the dog; pathetic. \n\nAll investigators get {qst:HORROR1}. \n\n- Anyway, where was I going? Ah yes, the body of a faithful animal -he says while he takes the dog and throws it to the portal. You see the body of the poor animal disappear into the portal. Shortly after you hear some sounds of something that you are sure is not of this world. Is all this really happening? Is it real? \n\nYou realize that the guy is watching your sad reaction with macabre pleasure. An evil smile is drawn on his face.
+EventLobbyShow07A.text,She had trusted you, firmly believed that you would save her and the poor thing has died in a horrible way. And you couldn't do anything! \n\nAll investigators get {qst:HORROR1} overridden by {will} -1.
+EventLobbyShow06.text,- The blood of an innocent virgin as an offering for the almighty - he pronounces while placing the girl on an altar and begins to slit her neck with a dagger. The girl looks at you, her face full of tears and gurgling blood, choking. \n\nWhen the girl finally stops breathing, she closes her eyes and her body relaxes. She is already resting ... poor creature.
+EventLobbyShow07A.button1,{qst:CONTINUE}
+EventLobbyShow07B.text,You should have helped her, what were you thinking so as not to help a poor little girl in distress? What other fate awaited a girl in a place like this? \n\nAll investigators receive {qst:HORROR2} face up canceled by {will} -2.
+EventLobbyShow07B.button1,{qst:CONTINUE}
+EventLobbyShow08.text,The guy turns to you: \n- And the blood of those who intend to prevent his arrival in this world. \n\nLicks the blade of the dagger, still covered in the girl's blood, and approaches you. He slashes each of you with the dagger and throws the blood into the portal. \n\nAll investigators take 1 damage. \n\nWhen your blood enters the vortex, you feel like you can now move freely. The time for revenge has come, to make this scum pay for all the damage they have done to get where they have come.
+EventLobbyShow08.button1,{qst:CONTINUE}
+EventLobbyShow09.text,The other cultists continue to speak the words of the ritual. Something begins to appear through the portal ...
+EventLobbyShow09.button1,{qst:CONTINUE}
+EventLobbyShow10A.button1,{qst:CONTINUE}
+EventLobbyShow10B.text,Place a Starseed token {MAD20} in the indicated location. Investigators will not have to dodge him or make horror rolls against him for now. But what's going through the portal is so terrifying ... \n\nAll investigators get {qst:HORROR1} overridden by {will} - 1.
+EventLobbyShow11.text,All investigators can act as if it were a new turn, even those who have already acted. \n\nPerhaps you can stop this madness by killing the leader before that creature passes through the portal. Don't let this {c:SpawnPriestOfDagon} {MAD20} get away with it; End his life before it's too late!
+EventLobbyShow11.button1,{qst:CONTINUE}
+EventLobbyShow12.text,At your side you see one door barricaded with boards.
+EventLobbyShow12.button1,{qst:CONTINUE}
+EventLobbyShow13.text,In the background, to one side, the same.
+EventLobbyShow13.button1,{qst:CONTINUE}
+EventLobbyShow14.text,The front door is ajar, maybe you can get out that way. \n\n {qst:TOKENEXPLOREON}
+EventLobbyShow14.button1,{qst:CONTINUE}
+TokenLobbyExit.text,The door is ajar. You go?
+TokenLobbyExit.button1,{action} Get out of here; every man for himself.
+EventLobbyShow15.text,The door at the back to the right appears equally blocked.
+EventLobbyShow15.button1,{qst:CONTINUE}
+EventLobbyShow16.text,And the door that you have nearby is also barred.
+EventLobbyShow16.button1,{qst:CONTINUE}
+SpawnStarSpawn.button1,{qst:CONTINUE}
+SpawnStarSpawn.text,The fabric of reality cracks, a grotesque and enormous figure makes its way from the portal. Destiny is written. The worst death you have ever imagined in your life is now a dream beyond your reach. \n\nPlace a {c:SpawnStarSpawn} {MAD20} token in the indicated spot.
+UIEndGood01ContinueText.uitext,The End
+EventEndGood01B.text,What exactly happened? What have you just experienced? Is everything really over? Those of you who are still standing look at each other stunned, incredulous despite seeing with your own eyes the horrors not only of the afterlife, but those that humans themselves, in their desperation, are capable of carrying out. \nThat poor girl ... and her dog. Why, why did she have to end up like this? Your heart may continue to pump blood, the air may fill your lungs, but it is not clear if you have survived or if, on the contrary, you are condemned to the myriad horrors that will subdue your mind for the rest of your lives. \nIs ... it really over?
+EventEndGood01B.button1,{qst:CONTINUE}
+EventLibraryDoor01Opened06.text,{qst:TOKENEXPLOREOFF} \n\n {qst:MAYMOVE}
+EventLibraryDoor01Opened06.button1,{qst:CONTINUE}
+EventDoorToHailRoom02Opened06.text,{qst:TOKENEXPLOREOFF} \n\n {qst:MAYMOVE}
+EventDoorToHailRoom02Opened06.button1,{qst:CONTINUE}
+EventCorridor02ViewMoreShow06.button1,{qst:CONTINUE}
+EventCorridor02ViewMoreShow03.text,{qst:TOKENWALLON}
+TokenCorridor03Door03.button1,{qst:CONTINUE}
+EventCorridor01ViewMoreShow5.text,There is one more door at the end of the hall. \n\n {qst:TOKENEXPLOREON}
+TokenCorridor03Door03.text,Just a shelf.
+TokenCorridor03Door04.button1,{qst:CONTINUE}
+EventCorridor01ViewMoreShow2.text,{qst:TOKENWALLON}
+EventCorridor01ViewMoreShow2.button1,{qst:CONTINUE}
+EventStartRoundBathroomViewed.text,A few knocks come from the room at the end of the hall. It could be someone in distress or ... maybe some danger!
+SpawnPriestOfDagon.button1,{qst:CONTINUE}
+EventEndGood02A.button1,{qst:CONTINUE}
+EventEndGood02A.text,The creature staggers ... are you really done with it? The mansion begins to totter; an earthquake seems to have started. \nThe Cultists stare at you, stunned at the fall of what they believed to be their new god. Their disbelief and increasing tremors make them unable to control the portal. A strong wind blows everything in the room towards the portal. By the hair you manage to hold where you can; The Cultists have not had the same fate, they are all sucked into the portal, where a figure larger if possible than the one you just defeated receives them as they deserve, with a slow death full of unimaginable horrors ...
+quest.description,Sudden amnesia and the fact that you wake up in an unfamiliar mansion set the stage for this story. Can you unravel the mysteries that this mansion hides? \n\nAs a good investigator, you always have a notebook and something to take notes on hand. \n\nThe story begins ... \n\nThank you for playing the scenario. I also appreciate any comments, suggestions or constructive criticism that you contribute in the final form or issue created here: \n\n <i> https://github.com/mmartinez3982/MAD_Map001 </i>
+TokenLobbyCultist05.text,It does not seem relevant to focus on him.
+TokenLobbyCultist05.button1,{qst:CONTINUE}
+TokenLobbyCultist04.text,A cultist woman. Her gaze ... seems lost.
+TokenLobbyCultist04.button1,{qst:CONTINUE}
+TokenLobbyCultist03.text,She seems in a trance ...
+TokenLobbyCultist03.button1,{qst:CONTINUE}
+TokenLobbyCultist01.text,A strange guy. It seems to have no fear of anything ...
+TokenLobbyCultist01.button1,{qst:CONTINUE}
+TokenLobbyCultist02.text,Yet another guy ... how many are there? Why do they do this?
+TokenLobbyCultist02.button1,{qst:CONTINUE}
+UIIntroductionContinueText.uitext,{qst:CONTINUE}
+UIIntroductionText.uitext,The concept of the supernatural leaves no one indifferent. Although there will always be skeptics, the truth is that there are more and more followers of all kinds of cults that study the paranomal. \n \nAnd we must not forget a third type: those people who neither believe nor stop believing; people who want to learn about these sects and their beliefs, understand their motivations, perhaps with the illusion of getting to see what they cannot see. What do these cults find in what they do? Why do they go to the extreme that some go? \n \nMany years of research have been dedicated to the study of different cults of all kinds. , from the satanic to the purest lovecraft style. And that, fellow workers, is what has brought you here.
+UIIntroduction2ContinueText.uitext,Continue
+UIIntroduction2Text.uitext,You look around you and it takes you a few seconds to become aware of something: you don't remember anything. The headache is unbearable. You sit up, and in an effort to remember, you vaguely succeed. \n \nYou are a group of associates who are dedicated to the investigation of people who delve into the paranormal for evil purposes. You were conducting an investigation into a group of fanatics. After a while tracking them, you came to think that they were mere unbalanced people who had not really been related to anything paranormal, until ... Yes, that's it; You had found something important and you went to check it out. \n \nAs you look at each other, you realize that you all seem equally confused and lost. How long have you been there? And where are you?
+UIIntroduction3Text.uitext,You may not remember much about your most immediate past, but you are clear about how your path has always been ... \n \n <i> (this decision will affect several areas throughout the scenario) </i>
+EventCenterCameraStartGame.text,At the least one thing you have clear: you have to get out of here.
+EventCenterCameraStartGame.button1,{qst:CONTINUE}
+EventCorridor04Door02Opened03.text,{qst:TOKENEXPLOREOFF} \n \n {qst:MAYMOVE}
+EventCorridor04Door02Opened03.button1,{qst:CONTINUE}
+EventBathRoomGoInside.text,{qst:MAYMOVE}
+EventBathRoomGoInside.button1,{qst:CONTINUE}
+EventCorridor01ViewMoreShow6.text,{qst:TOKENLOOKOFF}
+EventCorridor01ViewMoreShow6.button1,{qst:CONTINUE}
+EventCorridor02ViewMore06.button1,{qst:CONTINUE}
+EventPianoRoomDoorOpened04.text,{qst:TOKENEXPLOREOFF} \n \n {qst:MAYMOVE}
+EventCorridor02ViewMore06.text,{qst:TOKENLOOKOFF}
+EventPianoRoomDoorOpened04.button1,{qst:CONTINUE}
+SpawnWindowMaxDifficulty.text,Something came through the living room window! \n \nPlace a {c:QItemMonsterRandomWindow} {MAD20} token in the indicated place. If there is an investigator in the room they receive {qst:HORROR1}.
+EventDoorToHailRoom02Opened03B.button1,{qst:CONTINUE}
+EventDogDied.text,No Toby, poor thing ... he has given his life to protect the girl, to protect us all. And we have let her die! What kind of people are we? \n \nAll investigators are dealt {qst:HORROR1} face up. \n \nDiscard the Toby token.
+EventDogDied.button1,{qst:CONTINUE}
+TokenDog.button2,Toby is dead
+EventLobbyShow05A.button1,{qst:CONTINUE}
+EventLobbyShow05B.button1,{qst:CONTINUE}
+EventCorridor03Door02OpenOrNot.button1,{qst:OPEN}
+EventCorridor03Door02OpenOrNot.button2,Do not open
+EventCorridor03Door02OpenOrNot.text,Just when you go to open the locks your instinct stops you. The harbinger of something horrible beyond the threshold of this door. \n \nYou feel like you have to need the other investigators by your side to deal with what lies ahead. \n \nOnly when all investigators are within reach Whoever opens this door, you can open it. All investigators will go through the door at the same time.
+EventLobbyShow10B.button1,{qst:CONTINUE}
+EventLobbyShow10A.text,Place a Starseed token {MAD20} in the indicated location. Investigators will not have to dodge him or make horror rolls against him for now.
+Spawn1.button1,Continue
+Spawn1.text,asdf
+UIIntroduction3Option1Text.uitext,You have always had help
+UIIntroduction3Option2Text.uitext,You become stronger in adversity
+UIIntroduction3Option3Text.uitext,Life is a constant struggle
+UIEndGood01Text.uitext,Cultists stare at you, stunned at the death of their leader. Without their power they are unable to control the portal. A strong wind blows everything in the room towards the portal. \n \nBy the hair you manage to hold on where you can; the Cultists have not suffered the same fate, they are all sucked into the portal, where the Starseed receives them as they deserve, with a slow death full of unimaginable horrors ... \n \nWhat exactly happened? What have you just experienced? Is everything really over? Those of you who are still standing look at each other stunned, incredulous despite seeing with your own eyes the horrors not only of the afterlife, but those that humans themselves, in their desperation, are capable of carrying out. \n \nThat poor girl ... and her dog. Why? Why did it have to end like this? Your heart may continue to pump blood, the air may fill your lungs, but it is not clear if you have survived or if, on the contrary, you are condemned to the myriad horrors that will subdue your mind for the rest of your lives. \nThis. ..Is it really over?
+UIEndBad01Text.uitext,Desperate, you leave the mansion, leaving everything and everyone behind to their fate. \n \nSoon after you hear sounds coming from the most horrible nightmares you can imagine, along with the screams of terror from your companions and the cultists. \n \nFor the moment you have escaped, but the horror unleashed will stain this world with the blood of innocents. As you leave the screaming behind, farther and farther, you realize: you're dead, not right now, but you know you'll be very soon. \n \nFor a moment to catch your breath. You don't want to do it but you can't help it, you want to know what's going on. You turn around and stare at the mansion; Rather, where it used to be. Now there is only darkness so deep ... And a creature of inordinate size, with tentacles that ... \n \nYour heart skips a beat. You want to get away from there, but your legs do not respond. You fall to your knees to the ground, absorbed by the terror that directs its attention to you. A tear runs down your cheek. Death had never seemed like a good ending to you. And you long for that to be what really happens to you, for a swift death to take you into its bosom. \n \nBut don't fool yourself, we both know it won't. From the moment you decided to walk out that door, you sealed your fate.
+UIEndBad01ContinueText.uitext,The End
+UIEndBad02Text.uitext,It was a matter of time that with the fall of one investigator, all the others would follow him. \n \nCreatures from your most horrible nightmares appear in different corners of the mansion, lurking, enjoying the moment when you discover your imminent end; They seem to savor it and enjoy it. \n \nIt's over, none of them will leave here.
+UIEndBad02ContinueText.button1,Continue
+UIEndBad02ContinueText.uitext,The End

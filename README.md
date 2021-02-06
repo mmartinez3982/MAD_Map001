@@ -60,6 +60,9 @@ Difficulty significantly balanced based on: scenario difficulty chosen, number o
 
 Added github link.
 
+#### 0.8.2 (2021/02/06)
+
+Scenario translated into English.
 
 
 ## Español
@@ -115,3 +118,7 @@ Pequeña mejora visual: los textos de pistas ahora aparecen en otro color.
 Balanceo de dificultad significativo en base a: dificultad del escenario seleccionada, número de investigadores, rondas jugadas.
 
 Agregado enlace a github.
+
+#### 0.8.2 (2021/02/06)
+
+Escenario traducido al inglés.
