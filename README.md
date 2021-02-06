@@ -10,6 +10,21 @@
 
 ### Introduction
 
+My very first Madness Mansions scenario for [Valkyrie](https://github.com/NPBruce/valkyrie).
+
+### To-do list (no special order)
+
+* Explain which is exactly the number and type of damage the dog deals.
+* Translate scenario into English language.
+* Include tiles names.
+* Rework initial static mythos (at least the first of all of them): difficulty and description.
+* Include at least one light source.
+* Rethink about ending need to be all together or how to make it flow better and less forced.
+* Alternative ending: to be able to save the girl.
+* Shorten mapsize (big rework).
+* Adjust and balance scenario difficulty to properly match what could be expected.
+* Add de possibility of multiple choices both at the beginning and during the game. These will affect how the story advance and some other important facts: monsters, events, etc.
+
 ### Versions
 
 #### 0.7.1 (2021/01/30)
@@ -49,6 +64,21 @@ Added github link.
 ## Español
 
 ### Introducción
+
+Mi primer escenario del juego de Mansiones de la Locura para [Valkyrie](https://github.com/NPBruce/valkyrie).
+
+### Lista de tareas (sin ningún orden)
+
+* Explicar cuáles son exactamente el número y tipo de daño que hace el perro.
+* Traducir el escenario al inglés.
+* Incluir el nombre de las losetas (tiles).
+* Rehacer los mythos iniciales (al menos el primero de todos): dificultad y descripción
+* Incluir al menos una fuente de luz.
+* Dale una pensada a la necesidad de que al final tengan que estar todos juntos para hace que fluya mejor y sea menos forzado.
+* Final alternativo: poder salvar a la niña.
+* Reducir el tamaño del mapa (gran rework).
+* Ajustar y balancear la dificultad del escenario para que se ajuste a lo que se podría esperar.
+* Añadir la posibilidad de múltiples elecciones tanto al principio como durante el juego. Estas afectarán a cómo evoluciona la historia y algunos otros aspectos: monstruos, eventos, etc.
 
 ### Versiones
 
