@@ -21,6 +21,7 @@ My very first Madness Mansions scenario for [Valkyrie](https://github.com/NPBruc
 * Include at least one light source.
 * Rethink about ending need to be all together or how to make it flow better and less forced.
 * Alternative ending: to be able to save the girl.
+* Add more and better puzzles.
 * Shorten mapsize (big rework).
 * Adjust and balance scenario difficulty to properly match what could be expected.
 * Add de possibility of multiple choices both at the beginning and during the game. These will affect how the story advance and some other important facts: monsters, events, etc.
@@ -76,6 +77,7 @@ Mi primer escenario del juego de Mansiones de la Locura para [Valkyrie](https://
 * Incluir al menos una fuente de luz.
 * Dale una pensada a la necesidad de que al final tengan que estar todos juntos para hace que fluya mejor y sea menos forzado.
 * Final alternativo: poder salvar a la niña.
+* Añadir más y mejores puzzles.
 * Reducir el tamaño del mapa (gran rework).
 * Ajustar y balancear la dificultad del escenario para que se ajuste a lo que se podría esperar.
 * Añadir la posibilidad de múltiples elecciones tanto al principio como durante el juego. Estas afectarán a cómo evoluciona la historia y algunos otros aspectos: monstruos, eventos, etc.
